@@ -1,7 +1,12 @@
 aid: american-financial-group
-url: https://raw.githubusercontent.com/api-evangelist/american-financial-group/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/american-financial-group/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.american-financial-group.com
+description: >-
+  American Financial Group is a holding company engaged primarily in property and
+  casualty insurance, focusing on specialized commercial products for businesses,
+  and in the sale of fixed and indexed annuities.
