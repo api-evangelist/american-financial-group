@@ -21,6 +21,8 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.j
 access: 3rd-Party
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/american-financial-group-domain-security.yml
   - type: Website
     url: https://www.afginc.com
   - type: Website
