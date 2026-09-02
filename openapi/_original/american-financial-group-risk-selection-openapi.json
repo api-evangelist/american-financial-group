@@ -1,0 +1,159 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Great American Insurance - Risk Selection",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/endpoints": {
+      "get": {
+        "tags": ["endpoints"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs": {
+      "post": {
+        "tags": ["docs"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs/contextData": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs/questionSetCriteria": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs/lines": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/contextData": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/lines": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/createAnswerSession": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/updateAnswerSession": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getAnswerSession": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/setAnswerSession": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/questionSet": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/questionnaire": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/checkEligibility": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/synthetic": {
+      "get": {
+        "tags": ["synthetic"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

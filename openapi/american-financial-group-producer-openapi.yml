@@ -1,0 +1,103 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Producer
+  version: 1.0.0
+paths:
+  /api/endpoints:
+    get:
+      tags:
+      - endpoints
+      responses:
+        '200':
+          description: OK
+  /api/docs:
+    post:
+      tags:
+      - docs
+      responses:
+        '200':
+          description: OK
+  /api/info:
+    post:
+      tags:
+      - info
+      responses:
+        '200':
+          description: OK
+  /api/producer:
+    post:
+      tags:
+      - producer
+      responses:
+        '200':
+          description: OK
+  /api/producerContacts:
+    post:
+      tags:
+      - producerContacts
+      responses:
+        '200':
+          description: OK
+  /api/producers:
+    post:
+      tags:
+      - producers
+      responses:
+        '200':
+          description: OK
+  /api/agencyCodes:
+    post:
+      tags:
+      - agencyCodes
+      responses:
+        '200':
+          description: OK
+  /api/businessUnit:
+    post:
+      tags:
+      - businessUnit
+      responses:
+        '200':
+          description: OK
+  /api/businessUnits:
+    get:
+      tags:
+      - businessUnits
+      responses:
+        '200':
+          description: OK
+  /api/hierarchy:
+    post:
+      tags:
+      - hierarchy
+      responses:
+        '200':
+          description: OK
+  /api/claims:
+    post:
+      tags:
+      - claims
+      responses:
+        '200':
+          description: OK
+  /api/billingInfo:
+    post:
+      tags:
+      - billingInfo
+      responses:
+        '200':
+          description: OK
+  /api/synthetic:
+    get:
+      tags:
+      - synthetic
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/producer
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/producer
+  description: UAT
+- url: https://dev01.api.gaig.com/producer
+  description: DEV

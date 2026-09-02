@@ -1,0 +1,91 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  https://api-documentation.gaig.com/{policy,forms,ingestion,shop}/index.html and the 18 OpenAPI
+  documents harvested from https://api-documentation.gaig.com/{service}/openapi.json
+standards:
+  - id: openapi
+    name: OpenAPI Specification
+    conforms: true
+    version: 3.0.3 (3.0.1 for the Document API)
+    evidence: >-
+      All 18 Carrier Services APIs publish a parseable OpenAPI document at
+      https://api-documentation.gaig.com/{service}/openapi.json — declared openapi 3.0.3, or 3.0.1 for
+      the Document API — linked as "Open API Specification" from each reference page.
+  - id: oauth2
+    name: OAuth 2.0 (RFC 6749) client credentials grant
+    conforms: true
+    evidence: >-
+      "All endpoints on this API are secured with OAuth 2.0, using the client_credentials grant type."
+      POST /oauth/token with HTTP Basic client authentication and
+      Content-Type: application/x-www-form-urlencoded, grant_type=client_credentials, returning
+      access_token / token_type / expires_in.
+  - id: bearer-token-rfc6750
+    name: OAuth 2.0 Bearer Token Usage (RFC 6750)
+    conforms: true
+    evidence: 'Authorization: {token_type} {access_token} — documented as Bearer on every API.'
+  - id: acord
+    name: ACORD (P&C insurance data standards)
+    conforms: true
+    confidence: low
+    evidence: >-
+      The Forms API declares an intake datatype named "CreateFormAttachmentFromACORD" —
+      "Transaction Form Attachment Request" — in the GET /api/datatypes response documented at
+      https://api-documentation.gaig.com/forms/index.html, and /api/attach accepts application/xml as
+      well as application/json. That is a genuine ACORD-shaped intake path, but it is a single named
+      datatype on one of 18 APIs, not an ACORD-native surface: no ACORD namespace, AL3 record type or
+      ACORD XML message name is declared anywhere in the OpenAPI documents.
+  - id: rfc9457
+    name: RFC 9457 Problem Details for HTTP APIs
+    conforms: false
+    evidence: >-
+      Errors are returned as a proprietary envelope — {"errors":[{"category","code","message"}]} for 400,
+      an Apigee {"fault":{...}} envelope for 401, and {"timestamp","status","error","message","path"} for
+      500/501. No application/problem+json media type appears in any spec or reference page.
+  - id: oidc
+    name: OpenID Connect
+    conforms: false
+    evidence: /.well-known/openid-configuration returns 404 on every probed host; no ID token or user-delegated flow is documented.
+  - id: rfc9116
+    name: RFC 9116 security.txt
+    conforms: partial
+    evidence: >-
+      Served at https://www.greatamericaninsurancegroup.com/.well-known/security.txt (200) with Policy and
+      Contact, but the REQUIRED Expires field is absent.
+  - id: rfc8594
+    name: RFC 8594 Sunset header / deprecation signalling
+    conforms: false
+    evidence: No Sunset or Deprecation header, deprecation policy or versioning policy is documented on any of the 18 reference pages.
+  - id: rate-limit-headers
+    name: IETF RateLimit header fields
+    conforms: false
+    evidence: No RateLimit-*, X-RateLimit-* or Retry-After header is documented; 429 does not appear in any published status-code table.
+  - id: idempotency-key
+    name: Idempotency-Key header (draft-ietf-httpapi-idempotency-key-header)
+    conforms: false
+    evidence: >-
+      No idempotency key, request key or replay-safety mechanism is documented on any endpoint, including
+      the write surfaces (POST /api/issue, POST /api/createPayments, POST /api/bind, POST /api/fnol/create).
+  - id: json-api
+    name: JSON:API
+    conforms: false
+    evidence: Responses are bespoke JSON objects; no JSON:API media type or document structure is used.
+  - id: pagination
+    name: Documented pagination
+    conforms: false
+    evidence: >-
+      No page, cursor, offset, limit or link-header pagination is documented on any collection endpoint,
+      including the search endpoints (POST /api/search on Submission, Contract, Opportunity and Claims).
+compliance_certifications:
+  published: false
+  note: >-
+    No trust center, SOC 2, ISO 27001, PCI DSS, HIPAA or FedRAMP attestation page was found on
+    greatamericaninsurancegroup.com, gaig.com or afginc.com. AFG is an SEC registrant and a
+    state-regulated insurance group, but that is statutory filing status, not a published API compliance
+    program, so no Compliance pointer is emitted.
+regulatory_context:
+  regime: insurance
+  note: >-
+    US state Departments of Insurance and NAIC solvency reporting govern the underlying carriers
+    (Great American Insurance Company and affiliates). No open-insurance data-sharing mandate applies to
+    this surface; the APIs are carrier-to-distributor integration, not policyholder-permissioned data sharing.

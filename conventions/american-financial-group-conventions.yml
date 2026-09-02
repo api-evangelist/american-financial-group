@@ -1,0 +1,125 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/{service}/index.html (all 18 published reference pages)
+summary: >-
+  The 18 Great American Carrier Services APIs share one house style: a single OAuth 2.0 client_credentials
+  bearer scheme, a common HTTP status-code contract, and — the defining convention — a runtime
+  self-description pair, GET /api/endpoints and POST /api/docs, that replaces static schema. Because one
+  API serves many business divisions and products, the request and response bodies are NOT fixed in the
+  OpenAPI document; they are fetched per consumer, per endpoint, and optionally per scope (state, product).
+auth:
+  style: oauth2-client-credentials-bearer
+  detail: authentication/american-financial-group-authentication.yml
+runtime_discovery:
+  endpoints_operation: GET /api/endpoints
+  endpoints_note: >-
+    Call first. Returns only the endpoints this consumer is entitled to call. Calling an unlisted endpoint
+    returns 501 Not Implemented.
+  docs_operation: POST /api/docs
+  docs_note: >-
+    Returns the request or response body for a named endpoint. Request body is
+    {type: request|response, endpoint: <path>, format: json|details, scope: {…}} — the optional scope
+    narrows the shape by factors such as state. This is the schema source of record; the OpenAPI documents
+    carry no components.schemas at all.
+  present_on: 16 of 18 APIs (Ingestion and Risk Selection expose their own variants)
+idempotency:
+  supported: false
+  header: null
+  scope: null
+  retention: null
+  note: >-
+    No Idempotency-Key, request key, client reference or replay-safety mechanism is documented on any
+    endpoint. This is a real gap on this surface: POST /api/issue, POST /api/bind, POST /api/createPayments
+    and POST /api/fnol/create are all money- or record-creating writes with no documented safe-retry story.
+    No Idempotency pointer is emitted, because the provider does not publish one.
+pagination:
+  supported: false
+  note: >-
+    No page, cursor, offset, limit or Link-header pagination is documented, including on the search
+    operations (POST /api/search on Submission, Contract, Opportunity and Claims and the Document API's
+    /api/*/search/* family). Result-set bounding is presumably request-shaped and is described, if at all,
+    in the per-consumer POST /api/docs response.
+field_expansion:
+  supported: false
+metadata:
+  supported: false
+request_id_tracing:
+  supported: false
+  note: No correlation-id or request-id header is documented on request or response.
+content_negotiation:
+  json: true
+  xml: true
+  note: >-
+    Forms accepts and returns both application/json and application/xml (Content-Type and Accept are
+    documented as required headers). Ingestion accepts JSON, XML, PDF and arbitrary binary. The rest of
+    the surface is JSON.
+custom_headers:
+  - name: gaig-data-type
+    api: ingestion
+    description: Names the document data type being ingested. Also accepted as a query parameter. Valid values come from POST /api/dataTypes (documented example set includes loss_run, claims, policy, billing, submission, certificate).
+  - name: gaig-formdatatype
+    api: forms
+    description: 'Required on /api/attach. Valid values: CompleteFormList, SelectableFormList, PrintOrders, PrintOrdersOrderedByPrintTier.'
+versioning:
+  detail: lifecycle/american-financial-group-lifecycle.yml
+error_envelope:
+  detail: errors/american-financial-group-problem-types.yml
+  shapes: ['errors[] on 400', 'fault{} on 401', 'timestamp/status/error/message/path on 500 and 501']
+rate_limit_signaling:
+  supported: false
+  detail: rate-limits/american-financial-group-rate-limits.yml
+dry_run_mode:
+  supported: partial
+  grade: documented
+  note: >-
+    There is no dry_run flag, but the surface separates rehearsal from commitment by design: Rating
+    (/api/rate, /api/quote) and Shop (/api/newBusiness/pricing, /api/pricingIndication) price a risk
+    without creating anything, Risk Selection (/api/checkEligibility) evaluates appetite without
+    submitting, and only Submission /api/bind and Issuance /api/issue commit. An agent can therefore
+    rehearse a full quote before any write, but no operation advertises itself as a simulation.
+reversibility:
+  grade: documented
+  credit_basis: >-
+    Reversal operations are published for the main write surfaces, but no document states the window
+    inside which any of them works, so this grades `documented` and not `verified`. NO WINDOW IS ASSERTED
+    HERE, because the provider asserts none.
+  operations:
+    - action: Issue or enroll a policy
+      forward: POST /api/issue, POST /api/enroll (issuance)
+      reversal: POST /api/cancel (issuance)
+      reversal_description: Cancel an in-force policy or an existing enrollment.
+      window_stated: false
+      window_discovery: >-
+        POST /api/cancelDates (policy) — "Get valid cancellation date information" — returns the valid
+        cancellation dates for a policy at runtime. The window is therefore machine-discoverable per
+        policy, but it is not stated anywhere in the documentation.
+      docs: https://api-documentation.gaig.com/issuance/index.html
+    - action: Change an enrollment
+      forward: POST /api/enroll (issuance)
+      reversal: POST /api/enrollmentChange, POST /api/enrollmentCoverageChange, POST /api/re-enroll (issuance)
+      reversal_description: Update an enrollment or its coverage; re-enroll a quote.
+      window_stated: false
+      docs: https://api-documentation.gaig.com/issuance/index.html
+    - action: Create an opportunity
+      forward: POST /api/create (opportunity)
+      reversal: POST /api/delete (opportunity)
+      reversal_description: Delete an opportunity record.
+      window_stated: false
+      docs: https://api-documentation.gaig.com/opportunity/index.html
+    - action: Opt in to claims notifications
+      forward: POST /api/claims/optIn (notification)
+      reversal: POST /api/claims/optOut (notification)
+      reversal_description: Opt out of claims notifications; /api/claims/reOpen reverses a close.
+      window_stated: false
+      docs: https://api-documentation.gaig.com/notification/index.html
+    - action: Check out a document for editing
+      forward: GET /api/*/documents/*/checkout (document)
+      reversal: DELETE /api/*/documents/*/checkout (document)
+      reversal_description: Release a checkout without committing; POST /api/*/documents/*/checkin commits it.
+      window_stated: false
+      docs: https://api-documentation.gaig.com/document/index.html
+  no_reversal_documented:
+    - POST /api/bind (submission) — no unbind, void or rescind operation is published.
+    - POST /api/createPayments (billing) — no refund, void or reversal operation is published.
+    - POST /api/fnol/create and PUT /api/fnol/submit (claims) — no withdraw operation is published; PATCH /api/fnol/update amends a submission in place.
+    - POST /api/ingest (ingestion) — ingestion is append-only; no delete or retract is published.

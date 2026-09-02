@@ -1,0 +1,68 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Great American Insurance - Contract
+  version: 1.0.0
+extends: openapi/american-financial-group-contract-openapi.yml
+x-generated: '2026-09-02'
+x-method: generated
+x-source: https://api-documentation.gaig.com/contract/index.html and https://api-documentation.gaig.com/contract/openapi.json
+x-note: 'Captures API Evangelist enhancements only. The verbatim provider document is preserved at openapi/_original/.
+  Nothing here is invented: every value is published on the provider reference page for this API.'
+actions:
+- target: $
+  description: Add the Environment Base URLs published on https://api-documentation.gaig.com/contract/index.html
+    — the harvested specification ships an empty servers block.
+  update:
+    servers:
+    - url: https://prod01.api.gaig.com/contract
+      description: PROD
+    - url: https://uat01.api.gaig.com/contract
+      description: UAT
+    - url: https://dev01.api.gaig.com/contract
+      description: DEV
+- target: $.info
+  description: Add the support contact and documentation links published on the provider reference page.
+  update:
+    contact:
+      name: Great American Carrier Services API Support
+      email: DL-GAI.ITServices.GASLab-APISupport@GAIG.COM
+      url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+    x-documentation: https://api-documentation.gaig.com/contract/index.html
+    x-document-version: 0.27.0
+- target: $.components
+  description: Add the OAuth 2.0 client_credentials scheme documented for every endpoint on this API. The harvested
+    specification declares no securitySchemes.
+  update:
+    securitySchemes:
+      oauth2ClientCredentials:
+        type: oauth2
+        description: 'OAuth 2.0 client credentials grant. Authenticate to the environment token endpoint with HTTP
+          Basic (base64 clientId:clientSecret) and present the returned bearer token as Authorization: Bearer {access_token}.
+          Tokens expire in 3599 seconds.'
+        flows:
+          clientCredentials:
+            tokenUrl: https://prod01.api.gaig.com/oauth/token
+            scopes: {}
+- target: $
+  description: Apply the documented OAuth 2.0 requirement to the whole API. The Ingestion API POST /api/webhook/{name}
+    endpoint is the one documented exception and is deliberately not exempted here, because the exception is per-configured-webhook
+    and not machine-declared.
+  update:
+    security:
+    - oauth2ClientCredentials: []
+- target: $.paths.*.*.responses
+  description: Document the shared HTTP status-code contract published on every Great American Carrier Services
+    reference page. The harvested specification declares only 200 on every operation.
+  update:
+    '400':
+      description: Bad Request — {"errors":[{"category","code","message"}]}
+    '401':
+      description: Unauthorized — Apigee fault envelope {"fault":{"faultstring","detail":{"errorcode"}}}
+    '403':
+      description: Forbidden — identity known, entitlement missing
+    '404':
+      description: Not Found — endpoint not available on this API
+    '500':
+      description: Internal Server Error — {"timestamp","status","error","message","path"}
+    '501':
+      description: Not Implemented — endpoint not relevant for this client; call GET /api/endpoints

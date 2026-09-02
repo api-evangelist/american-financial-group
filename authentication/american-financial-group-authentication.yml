@@ -1,0 +1,63 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/policy/index.html
+docs: https://api-documentation.gaig.com/policy/index.html
+summary: >-
+  Every endpoint on every Great American Carrier Services API is secured with OAuth 2.0 using the
+  client_credentials grant. The client authenticates to the environment token endpoint with HTTP Basic
+  (base64 clientId:clientSecret), receives a bearer access token valid for 3599 seconds, and presents it
+  as `Authorization: Bearer {access_token}` on API calls. Credentials are issued by Great American through
+  the Carrier Services onboarding engagement — there is no self-service key issuance.
+schemes:
+  - id: oauth2_client_credentials
+    type: oauth2
+    flow: clientCredentials
+    in: header
+    header: Authorization
+    scheme: Bearer
+    client_authentication: http_basic
+    token_request:
+      method: POST
+      path: /oauth/token
+      content_type: application/x-www-form-urlencoded
+      body: grant_type=client_credentials
+    token_endpoints:
+      dev: https://dev01.api.gaig.com/oauth/token
+      uat: https://uat01.api.gaig.com/oauth/token
+      prod: https://prod01.api.gaig.com/oauth/token
+    token_response_fields:
+      - name: access_token
+        description: Bearer token to place in the Authorization header.
+      - name: token_type
+        description: Always Bearer; prefixes the access_token in the Authorization header.
+      - name: expires_in
+        description: Token lifetime in seconds. Documented example value is 3599.
+      - name: api_product_list_json
+        description: >-
+          Array of strings naming the API products (authorities) granted to this client, e.g.
+          ["issuance-dev","rating-dev"]. This is the authorization surface in place of named OAuth scopes.
+    applies_to: all endpoints on all 18 published APIs
+    exceptions:
+      - endpoint: POST /api/webhook/{name}
+        api: ingestion
+        note: >-
+          Documented as an unauthenticated endpoint designed for inbound webhooks. It only works for
+          known, pre-configured webhook names and the request is verified in a custom manner per name.
+gateway:
+  vendor_signal: Apigee
+  evidence: >-
+    401 responses are documented with the Apigee fault envelope
+    {"fault":{"faultstring":"Invalid Access Token","detail":{"errorcode":"keymanagement.service.invalid_access_token"}}}
+network_controls:
+  ip_allowlist: true
+  evidence:
+    url: https://prod01.api.gaig.com/oauth/token
+    status: 500
+    body: 'Access Denied for client ip : [<probe-ip>]'
+    note: >-
+      An anonymous POST to the production token endpoint is rejected at the network layer before any
+      credential check, which means consumer source IPs are allowlisted as part of onboarding.
+mtls: false
+api_keys: false
+openid_connect: false
+user_delegated_auth: false

@@ -1,0 +1,101 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/{service}/index.html — every published reference page carries a footer "Version <n> Last updated <timestamp>"
+versioning:
+  scheme: per-api document version, semver-shaped, all still 0.x
+  in_url: false
+  in_header: false
+  note: >-
+    There is no /v1 path segment, no version header and no published version-negotiation policy. Each API
+    reference page instead carries a document version and a last-updated timestamp in its footer, and every
+    one of the 18 APIs is still on a 0.x version number after up to three years in production.
+  policy_published: false
+deprecation:
+  policy_published: false
+  sunset_header: false
+  deprecation_header: false
+  deprecated_operations: []
+  note: >-
+    No deprecation policy, notice period, Sunset/Deprecation header (RFC 8594) or migration guidance
+    appears on any of the 18 reference pages. Nothing in any of the 18 OpenAPI documents is marked
+    deprecated. Because entitlement is per consumer, the practical deprecation signal is a 501
+    Not Implemented from an endpoint that GET /api/endpoints no longer lists.
+sla:
+  published: false
+status_page:
+  published: false
+  probed:
+    - url: https://status.gaig.com
+      status: DNS NXDOMAIN
+    - url: https://status.greatamericaninsurancegroup.com
+      status: DNS NXDOMAIN
+  note: No status page, uptime history or incident feed is published for the Carrier Services APIs.
+changelog:
+  published: false
+  note: >-
+    No dated changelog or release notes page exists. The only change signal is the per-page
+    "Last updated" footer, captured below.
+support:
+  email: DL-GAI.ITServices.GASLab-APISupport@GAIG.COM
+  portal: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+documents:
+  - api: risk-assessment
+    version: 0.106.0
+    last_updated: '2026-07-23'
+  - api: document
+    version: 0.39.0
+    last_updated: '2026-03-02'
+  - api: rating
+    version: 0.405.0
+    last_updated: '2026-02-16'
+  - api: issuance
+    version: 0.151.0
+    last_updated: '2026-02-11'
+  - api: submission
+    version: 0.141.0
+    last_updated: '2025-12-30'
+  - api: ingestion
+    version: 0.238.0
+    last_updated: '2025-12-09'
+  - api: contract
+    version: 0.27.0
+    last_updated: '2025-11-07'
+  - api: billing
+    version: 0.80.0
+    last_updated: '2025-10-13'
+  - api: forms
+    version: 0.132.0
+    last_updated: '2025-05-02'
+  - api: producer
+    version: 0.33.0
+    last_updated: '2025-02-04'
+  - api: claims
+    version: 0.125.0
+    last_updated: '2024-12-12'
+  - api: product
+    version: 0.84.0
+    last_updated: '2024-08-01'
+  - api: notification
+    version: 0.17.0
+    last_updated: '2024-06-24'
+  - api: letters
+    version: 0.38.0
+    last_updated: '2024-04-10'
+  - api: policy
+    version: 0.35.0
+    last_updated: '2023-07-31'
+  - api: opportunity
+    version: 0.9.0
+    last_updated: '2023-04-21'
+  - api: shop
+    version: 0.467.0
+    last_updated: '2023-01-09'
+  - api: risk-selection
+    version: null
+    last_updated: null
+    note: This page publishes no version/last-updated footer.
+staleness_finding: >-
+  Five of the 18 published reference documents have not been updated in over two years — Shop (2023-01-09),
+  Opportunity (2023-04-21), Policy (2023-07-31), Letters (2024-04-10) and Notification (2024-06-24) — while
+  Risk Assessment, Document, Rating and Issuance were all revised in 2026. Shop is the workflow API the
+  portal presents first and it carries the oldest document of the set at version 0.467.0.

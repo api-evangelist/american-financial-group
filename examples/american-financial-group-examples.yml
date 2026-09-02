@@ -1,0 +1,121 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/{policy,ingestion,forms}/index.html
+note: >-
+  Captured verbatim from the worked examples printed on the provider's own reference pages. The OpenAPI
+  documents carry no examples of their own, because request and response bodies are served at runtime by
+  POST /api/docs. Credential values below are the provider's own placeholder tokens, not real secrets.
+examples:
+  - id: oauth-token-request
+    api: all
+    operation: POST /oauth/token
+    request:
+      method: POST
+      path: /oauth/token
+      headers:
+        Authorization: 'Basic {{base64 encoded clientId:clientSecret}}'
+        Content-Type: application/x-www-form-urlencoded
+      body: grant_type=client_credentials
+    response:
+      status: 200
+      headers:
+        Content-Type: application/json
+      body:
+        api_product_list_json: [issuance-dev, rating-dev]
+        token_type: Bearer
+        access_token: ''
+        expires_in: 3599
+  - id: list-entitled-endpoints
+    api: all
+    operation: GET /api/endpoints
+    request:
+      method: GET
+      path: /api/endpoints
+      headers:
+        Authorization: 'Bearer {{access_token}}'
+    response:
+      status: 200
+      body:
+        endpoints: ['/api/example1', '/api/example2']
+  - id: fetch-request-shape
+    api: all
+    operation: POST /api/docs
+    request:
+      method: POST
+      path: /api/docs
+      headers:
+        Authorization: 'Bearer {{access_token}}'
+        Content-Type: application/json
+      body:
+        type: request
+        endpoint: /api/example1
+        format: json
+        scope:
+          state: OH
+  - id: validation-error
+    api: all
+    operation: any
+    response:
+      status: 400
+      headers:
+        Content-Type: application/json
+      body:
+        errors:
+          - category: Invalid Request
+            code: INVALID
+            message: The request was missing some piece of data.
+  - id: invalid-token
+    api: all
+    operation: any
+    response:
+      status: 401
+      body:
+        fault:
+          faultstring: Invalid Access Token
+          detail:
+            errorcode: keymanagement.service.invalid_access_token
+  - id: not-implemented-for-client
+    api: all
+    operation: any
+    response:
+      status: 501
+      body:
+        timestamp: '2021-05-01T12:00:00.000-0400'
+        status: 501
+        error: Not Implemented
+        message: API not yet implemented.
+        path: /api/path
+  - id: ingestion-data-types
+    api: ingestion
+    operation: POST /api/dataTypes
+    response:
+      status: 200
+      body:
+        dataTypes: [loss_run, claims, policy, billing, submission, certificate]
+  - id: forms-attach
+    api: forms
+    operation: POST /api/attach
+    request:
+      method: POST
+      path: /api/attach
+      headers:
+        Authorization: 'Bearer {{access_token}}'
+        Content-Type: application/json
+        Accept: application/json
+        gaig-formdatatype: CompleteFormList
+      body:
+        policy: {}
+        selectedForms: []
+        sortListCode: string
+    response:
+      status: 200
+      body:
+        forms:
+          - formCode: CM7604
+            printOrderNo: 1443
+            selectable: false
+            formContentTypeCode: DV
+            formTitle: Equipment Dealers Declarations
+            formEffectiveDate: '2019-01-31'
+            formEditionMonthYearDate: '0310'
+            formTypeRefCode: POL

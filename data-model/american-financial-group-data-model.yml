@@ -1,0 +1,196 @@
+generated: '2026-09-02'
+method: derived
+source: >-
+  openapi/american-financial-group-*-openapi.yml (paths and operations) cross-read against the endpoint
+  descriptions and worked examples on https://api-documentation.gaig.com/{service}/index.html
+caveat: >-
+  DERIVED FROM OPERATIONS, NOT FROM SCHEMA. None of the 18 OpenAPI documents declares
+  components.schemas — the Great American house convention returns request/response shapes at runtime from
+  POST /api/docs, scoped per consumer, division, product and state. The entities and relationships below
+  are read from operation paths, endpoint descriptions and the response examples printed in the reference
+  pages. Field-level attributes are deliberately NOT asserted, because the provider does not publish them
+  statically and they vary per consumer.
+entities:
+  - name: Opportunity
+    api: opportunity
+    description: A potential piece of business, before a submission exists.
+    operations: [POST /api/create, POST /api/read, POST /api/update, POST /api/delete, POST /api/search]
+  - name: Submission
+    api: submission
+    description: A new business submission routed to an internal Policy Administration System.
+    operations: [POST /api/create, POST /api/create/renewal, POST /api/read, POST /api/update, POST /api/assign, POST /api/setStatus, POST /api/bind, POST /api/search]
+  - name: Quote
+    api: rating, policy, letters, shop
+    description: A priced offer produced by rating a risk; readable afterwards from Policy and renderable by Letters.
+    operations: [POST /api/rate, POST /api/quote, POST /api/quotes, POST /api/quote (policy), POST /api/printableQuoteLetter]
+  - name: Policy
+    api: policy, issuance
+    description: An in-force contract of insurance, issued from a bound submission or enrollment.
+    operations: [POST /api/policy, POST /api/issue, POST /api/cancel, POST /api/policyMod, GET /api/policyNumber, POST /api/verifyMasterPolicy, POST /api/requestMasterPolicy]
+  - name: Enrollment
+    api: policy, issuance
+    description: A participant enrolled under a master policy.
+    operations: [POST /api/enrollment, POST /api/enroll, POST /api/re-enroll, POST /api/enrollmentChange, POST /api/enrollmentCoverageChange]
+  - name: PolicyTransaction
+    api: policy
+    description: A dated change event against a policy.
+    operations: [POST /api/transactions, POST /api/cancelDates]
+  - name: Certificate
+    api: policy
+    description: A generated evidence-of-coverage document for a policy.
+    operations: [POST /api/certificate]
+  - name: Product
+    api: product, rating, submission
+    description: A sellable insurance product, described by class codes, program codes, symbols and categories.
+    operations: [POST /api/products, POST /api/classCodes, POST /api/programCodes, POST /api/symbols, POST /api/categories, POST /api/classOfBusiness, POST /api/availability]
+  - name: Form
+    api: forms
+    description: A policy form (declarations, coverage form, endorsement) with a form code, edition date and print order.
+    example_identifiers: [CM7604, CM0022]
+    operations: [POST /api/attach, POST /api/getCompleteFormsList, POST /api/getSelectableFormsList, POST /api/getPrintOrders, POST /api/generatePDF, GET /api/search]
+  - name: Document
+    api: document, ingestion
+    description: A stored content item with metadata, versions, thumbnails, annotations and comments, held in the Great American ECM.
+    operations: [POST /api/*/documents, GET /api/*/documents/*, GET /api/*/documents/*/contents, GET /api/*/documents/*/versions, POST /api/ingest, POST /api/ingestDocument]
+  - name: Case
+    api: document
+    description: An underwriting workflow container that groups documents.
+    operations: [POST /api/*/cases/*/*, GET /api/*/cases/*, POST /api/*/cases/search, GET /api/*/cases/*/documents]
+  - name: BillingAccount
+    api: billing
+    description: A billing account with payment plans, charges and associated policies.
+    operations: [POST /api/createNewBillingAccount, POST /api/updateBillingAccount, POST /api/getAccountDetails, POST /api/getPoliciesForAccount, POST /api/getPaymentPlans, POST /api/billCharges]
+  - name: Payment
+    api: billing
+    description: A payment applied to a billing account; One Inc notification callbacks acknowledge payments, scheduled payments, payment methods and autopay details.
+    operations: [POST /api/createPayments, POST /oneinc/notifications/acknowledgePayments, POST /oneinc/notifications/acknowledgeScheduledPayments]
+  - name: Producer
+    api: producer, billing
+    description: An appointed agent, agency or broker, organized into business units and hierarchies by agency code.
+    operations: [POST /api/producer, POST /api/producers, POST /api/producerContacts, POST /api/agencyCodes, POST /api/hierarchy, GET /api/businessUnits, POST /api/updateProducers]
+  - name: Claim
+    api: claims, notification
+    description: A loss reported against a policy, opened by a first notice of loss.
+    operations: [POST /api/fnol/create, PATCH /api/fnol/update, GET /api/fnol/submission, PUT /api/fnol/submit, POST /api/reportPayment, POST /api/paymentFeedback, POST /api/riskReport]
+  - name: ServiceProvider
+    api: claims
+    description: A vendor engaged on a claim, with one or more addresses.
+    operations: [POST /api/serviceProvider/create, POST /api/serviceProvider/search, POST /api/serviceProvider/update, POST /api/serviceProvider/address/create]
+  - name: AnswerSession
+    api: risk-selection
+    description: A stateful question-and-answer session that sequences a questionnaire and returns an eligibility outcome.
+    operations: [POST /api/createAnswerSession, POST /api/updateAnswerSession, POST /api/getAnswerSession, POST /api/setAnswerSession, POST /api/questionSet, POST /api/questionnaire, POST /api/checkEligibility]
+  - name: RiskLocation
+    api: risk-assessment
+    description: A validated, geocoded address carrying peril scores, protection classifications and territory assignments.
+    operations: [POST /api/location/validateAddress, POST /api/location/geocode, POST /api/location/BCEGS, POST /api/location/publicProtectionClassification, POST /api/floodScore, POST /api/wildfireScore, POST /api/windRiskScore, POST /api/hailRiskScore, POST /api/coastalDistance]
+  - name: CatModelingReport
+    api: risk-assessment
+    description: A catastrophe model run and its report artifacts.
+    operations: [POST /api/catModeling/create, POST /api/catModeling/search, POST /api/catModeling/report, POST /api/catModeling/reportMetadata, POST /api/catModeling/reportLog]
+  - name: Contract
+    api: contract
+    description: A contract and tracking record, with its own billing view.
+    operations: [POST /api/submit, POST /api/contract, POST /api/billing, POST /api/search]
+relationships:
+  - from: Opportunity
+    to: Submission
+    type: has_many
+    via: business flow — an opportunity is worked into one or more submissions
+    confidence: medium
+  - from: Submission
+    to: Quote
+    type: has_many
+    via: Rating produces quotes for a submission
+    confidence: high
+  - from: Submission
+    to: Policy
+    type: has_one
+    via: POST /api/bind then POST /api/issue
+    confidence: high
+  - from: Policy
+    to: Enrollment
+    type: has_many
+    via: master policy — POST /api/verifyMasterPolicy, POST /api/enroll
+    confidence: high
+  - from: Policy
+    to: PolicyTransaction
+    type: has_many
+    via: POST /api/transactions
+    confidence: high
+  - from: Policy
+    to: Certificate
+    type: has_many
+    via: POST /api/certificate
+    confidence: high
+  - from: Policy
+    to: Form
+    type: has_many
+    via: POST /api/attach — forms are attached to a policy and printed in print order
+    confidence: high
+  - from: Policy
+    to: BillingAccount
+    type: belongs_to
+    via: POST /api/getPoliciesForAccount
+    confidence: high
+  - from: BillingAccount
+    to: Payment
+    type: has_many
+    via: POST /api/createPayments
+    confidence: high
+  - from: Policy
+    to: Claim
+    type: has_many
+    via: POST /api/fnol/create references the policy
+    confidence: high
+  - from: Claim
+    to: ServiceProvider
+    type: has_many
+    via: claims service provider create/search/update
+    confidence: medium
+  - from: Producer
+    to: Submission
+    type: has_many
+    via: agency code / business unit on the submission
+    confidence: medium
+  - from: Producer
+    to: BillingAccount
+    type: has_many
+    via: POST /api/billingInfo, POST /api/updateProducers
+    confidence: medium
+  - from: Submission
+    to: Document
+    type: has_many
+    via: POST /api/ingest and the Document API case/document families
+    confidence: medium
+  - from: Case
+    to: Document
+    type: has_many
+    via: GET /api/*/cases/*/documents
+    confidence: high
+  - from: Quote
+    to: RiskLocation
+    type: has_many
+    via: rating inputs are locations, coverages, limits and deductibles
+    confidence: medium
+  - from: RiskLocation
+    to: CatModelingReport
+    type: has_many
+    via: POST /api/catModeling/create
+    confidence: medium
+  - from: Product
+    to: Quote
+    type: has_many
+    via: rating is performed for a product
+    confidence: high
+  - from: AnswerSession
+    to: Submission
+    type: has_one
+    via: eligibility outcome gates whether a submission proceeds
+    confidence: medium
+id_conventions:
+  published: false
+  note: >-
+    No id prefix scheme is published. Issuance mints identifiers through GET /api/customerNumber and
+    GET /api/policyNumber; Rating references a manuscriptId; Forms uses provider form codes such as
+    CM7604 and E!AL7483_0518. Formats are not documented statically.

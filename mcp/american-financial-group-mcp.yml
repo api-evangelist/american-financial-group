@@ -1,0 +1,103 @@
+generated: '2026-09-02'
+method: derived
+source: openapi/american-financial-group-*-openapi.yml and https://api-documentation.gaig.com/{service}/index.html
+status: candidate
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: derived
+search_evidence:
+  - url: https://mcp.gaig.com/mcp
+    status: DNS NXDOMAIN
+  - url: https://prod01.api.gaig.com/mcp
+    status: 404
+  - url: https://www.greatamericaninsurancegroup.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api-documentation.gaig.com/.well-known/agent-card.json
+    status: 404
+note: >-
+  Great American publishes NO MCP server — hosted or stdio — and no agent card. Everything below is a
+  CANDIDATE tool set derived from the operations Great American does publish, so that an integrator can
+  see what an MCP surface over Carrier Services would look like. No endpoint is asserted and none should
+  be inferred. Two things would have to change before these tools could carry real input schemas: the
+  OpenAPI documents declare no components.schemas (bodies come from the runtime POST /api/docs endpoint),
+  and production access is OAuth client_credentials over an IP-allowlisted gateway, so an agent cannot
+  self-onboard.
+candidate_tools:
+  - name: check_appetite
+    description: Ask whether Great American writes a given risk before doing any other work.
+    backing: POST /api/newBusiness/appetite (shop), POST /api/checkEligibility (risk-selection)
+    consequence: read-only
+  - name: get_pricing_indication
+    description: Get an indicative price for a risk without creating a submission.
+    backing: POST /api/pricingIndication, POST /api/newBusiness/pricing (shop)
+    consequence: read-only
+  - name: rate_risk
+    description: Rate or quote a product from locations, coverages, limits and deductibles.
+    backing: POST /api/rate, POST /api/quote (rating)
+    consequence: read-only
+  - name: list_products
+    description: List sellable products, class codes, program codes and availability.
+    backing: POST /api/products, POST /api/classCodes, POST /api/availability (product)
+    consequence: read-only
+  - name: validate_address
+    description: Validate, recommend and geocode a risk address.
+    backing: POST /api/location/validateAddress, POST /api/location/recommendAddress, POST /api/location/geocode (risk-assessment)
+    consequence: read-only
+  - name: score_perils
+    description: Return flood, wildfire, wind, hail, coastal storm, sinkhole, sewer backup and crime scores for a location.
+    backing: POST /api/floodScore, /api/wildfireScore, /api/windRiskScore, /api/hailRiskScore, /api/coastalStormScore, /api/sinkholeScore, /api/sewerBackupScore, /api/crimeScore (risk-assessment)
+    consequence: read-only
+  - name: screen_sanctions
+    description: Screen a party against sanction lists, singly or in batch.
+    backing: POST /api/sanctionCompliance, POST /api/sanctionCompliance/batch (risk-assessment)
+    consequence: read-only
+  - name: create_submission
+    description: Create a new business submission in the policy administration system.
+    backing: POST /api/create (submission)
+    consequence: write
+  - name: bind_submission
+    description: Bind a submission. No unbind operation is published — this is a one-way write.
+    backing: POST /api/bind (submission)
+    consequence: write-irreversible
+  - name: issue_policy
+    description: Issue a policy or enrollment straight through.
+    backing: POST /api/issue, POST /api/enroll (issuance)
+    consequence: write
+    reversal: POST /api/cancel (issuance)
+  - name: cancel_policy
+    description: Cancel an in-force policy or enrollment. Valid dates come from POST /api/cancelDates (policy).
+    backing: POST /api/cancel (issuance)
+    consequence: write
+  - name: get_policy
+    description: Read policy, quote, enrollment, certificate and transaction information.
+    backing: POST /api/policy, /api/quote, /api/enrollment, /api/certificate, /api/transactions (policy)
+    consequence: read-only
+  - name: attach_forms
+    description: Attach, list and print policy forms; generate a PDF.
+    backing: POST /api/attach, /api/getCompleteFormsList, /api/generatePDF (forms)
+    consequence: write
+  - name: store_document
+    description: Store, retrieve, version and search documents and underwriting cases in the ECM.
+    backing: POST /api/*/documents, GET /api/*/documents/*, POST /api/*/cases/search (document)
+    consequence: write
+  - name: create_payment
+    description: Create a payment against a billing account. No refund or void operation is published.
+    backing: POST /api/createPayments (billing)
+    consequence: write-irreversible
+  - name: report_claim
+    description: Open, amend and submit a first notice of loss.
+    backing: POST /api/fnol/create, PATCH /api/fnol/update, PUT /api/fnol/submit (claims)
+    consequence: write
+  - name: lookup_producer
+    description: Look up producers, agency codes, business units and hierarchy.
+    backing: POST /api/producer, /api/agencyCodes, /api/hierarchy (producer)
+    consequence: read-only
+  - name: manage_opportunity
+    description: Create, read, update, delete and search opportunity records.
+    backing: POST /api/create, /api/read, /api/update, /api/delete, /api/search (opportunity)
+    consequence: write
+    reversal: POST /api/delete (opportunity)

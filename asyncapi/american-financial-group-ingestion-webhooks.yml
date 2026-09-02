@@ -1,0 +1,35 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/ingestion/index.html
+asyncapi_published: false
+event_surface: inbound-only
+direction: inbound
+webhooks:
+  - name: configured webhook receiver
+    operation: POST /api/webhook/{name}
+    api: ingestion
+    base_url: https://prod01.api.gaig.com/ingestion
+    authentication: none
+    description: >-
+      Documented verbatim as "Unauthenticated endpoint designed for webhooks. This endpoint only works for
+      known and configured names. The request/response structure is the same as defined in /api/ingest.
+      The request is verified in a custom manner depending on the webhook name."
+    payload: same as POST /api/ingest — JSON, XML, PDF or arbitrary binary, typed by the gaig-data-type header or query parameter
+    data_types_operation: POST /api/dataTypes
+    documented_data_types: [loss_run, claims, policy, billing, submission, certificate]
+    verification: per-webhook-name, custom, not publicly specified
+finding: >-
+  THIS IS A RECEIVER, NOT AN EVENT FEED. Great American publishes a webhook endpoint that partners POST
+  INTO, so that a third-party system can push documents and data to Great American. Great American does
+  NOT publish any outbound event, callback, subscription, streaming or notification-delivery surface: an
+  integrator cannot subscribe to policy, billing or claim events and must poll the read endpoints instead.
+  Because `Webhooks` in the catalog asserts that a provider delivers events to consumers, NO Webhooks or
+  AsyncAPI pointer is emitted from this file — recording an inbound receiver as an event surface would
+  credit an agent capability that does not exist here.
+related_inbound_callbacks:
+  - operation: POST /oneinc/notifications/acknowledgePayments
+    api: billing
+    note: >-
+      The Billing API exposes four /oneinc/notifications/* acknowledgement endpoints (payments, scheduled
+      payments, payment methods, autopay details). These are also inbound — Great American receiving
+      notifications from the One Inc payment platform — not events Great American emits.

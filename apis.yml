@@ -1,29 +1,33 @@
 aid: american-financial-group
 url: https://raw.githubusercontent.com/api-evangelist/american-financial-group/refs/heads/main/apis.yml
 name: American Financial Group
-description: >-
-  American Financial Group (AFG) is a holding company engaged primarily in property
-  and casualty insurance, focusing on specialized commercial products for businesses,
-  and in the sale of fixed and indexed annuities through its Great American Insurance
-  Group and Great American Life subsidiaries. AFG serves businesses across more than
-  40 specialty markets including agriculture, aviation, cyber, environmental, equine,
-  ocean marine, professional liability, and transportation.
+description: 'American Financial Group (AFG) is a Cincinnati-based holding company engaged primarily
+  in property and casualty insurance, focusing on specialized commercial products for businesses, and
+  in the sale of fixed and indexed annuities through its Great American Insurance Group and Great American
+  Life subsidiaries. AFG serves businesses across more than 40 specialty markets including agriculture,
+  aviation, cyber, environmental, equine, ocean marine, professional liability, and transportation.
+  Its machine-readable API surface is Great American Carrier Services: eighteen REST APIs published
+  at api-documentation.gaig.com — shop, submission, product, risk selection, rating, forms, issuance,
+  policy, document, billing, ingestion, risk assessment, letters, producer, contract, opportunity, notification
+  and claims — each with an OpenAPI 3.0 document, all secured with OAuth 2.0 client credentials, and
+  available to appointed agents, brokers, MGAs and program administrators through a four-phase onboarding
+  engagement rather than self-service signup.'
 tags:
-  - Insurance
-  - Property Casualty
-  - Specialty Insurance
-  - Annuities
-  - Financial-Services
-  - Commercial Insurance
-  - Fortune 500
+- Insurance
+- Property Casualty
+- Specialty Insurance
+- Annuities
+- Financial-Services
+- Commercial Insurance
+- Fortune 500
 tags_raw:
-  - Insurance
-  - Property Casualty
-  - Specialty Insurance
-  - Annuities
-  - Financial Services
-  - Commercial Insurance
-  - Fortune 500
+- Insurance
+- Property Casualty
+- Specialty Insurance
+- Annuities
+- Financial Services
+- Commercial Insurance
+- Fortune 500
 type: Index
 deliveryModel:
   model: unknown
@@ -49,73 +53,558 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/american-financial-group.png
 access: 3rd-Party
-apis: []
+apis:
+- name: Great American Carrier Services Shop API
+  description: Workflow API that orchestrates calls to multiple Great American Carrier Services to facilitate
+    shopping for insurance products — appetite, eligibility, application, pricing, documents and submit
+    for new business.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-shop-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-shop-overlay.yaml
+- name: Great American Carrier Services Submission API
+  description: Sends a new business submission to an internal Policy Administration System (PAS), with
+    create, renewal, read, update, assign, set status, search and bind operations.
+  humanURL: https://api-documentation.gaig.com/submission/index.html
+  baseURL: https://prod01.api.gaig.com/submission
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-submission-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-submission-overlay.yaml
+- name: Great American Carrier Services Product API
+  description: Describes information about products sold by Great American — class codes, program codes,
+    symbols, categories, availability and class of business.
+  humanURL: https://api-documentation.gaig.com/product/index.html
+  baseURL: https://prod01.api.gaig.com/product
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-product-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-product-overlay.yaml
+- name: Great American Carrier Services Risk Selection API
+  description: A flexible question-and-answer engine that generates a custom questionnaire, sequences
+    answer evaluation and additional questions, and returns an appetite/eligibility outcome.
+  humanURL: https://api-documentation.gaig.com/risk-selection/index.html
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-risk-selection-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Notes
+    data:
+    - name: No published base URL
+      description: The provider documentation page for this API publishes the OAuth token base URLs
+        but no Environment Base URL table, so baseURL is deliberately left unset rather than guessed
+        from the sibling services.
+  - type: Overlay
+    url: overlays/american-financial-group-risk-selection-overlay.yaml
+- name: Great American Carrier Services Rating API
+  description: Rates or quotes an insurance product — inputs are locations, coverages, limits and deductibles;
+    outputs are rates, premiums, taxes and quotes.
+  humanURL: https://api-documentation.gaig.com/rating/index.html
+  baseURL: https://prod01.api.gaig.com/rating
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-rating-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-rating-overlay.yaml
+- name: Great American Carrier Services Forms API
+  description: Searches, attaches and prints policy related forms, including form fields, print orders,
+    PDF generation and global fields.
+  humanURL: https://api-documentation.gaig.com/forms/index.html
+  baseURL: https://prod01.api.gaig.com/forms
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-forms-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-forms-overlay.yaml
+- name: Great American Carrier Services Issuance API
+  description: Processes straight-through transactions such as new business policies and enrollments
+    into master policies, and generates unique policy and customer numbers.
+  humanURL: https://api-documentation.gaig.com/issuance/index.html
+  baseURL: https://prod01.api.gaig.com/issuance
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-issuance-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-issuance-overlay.yaml
+- name: Great American Carrier Services Policy API
+  description: Reads policy, quote, enrollment, certificate, cancellation date and transaction information
+    from Great American internal policy administration systems.
+  humanURL: https://api-documentation.gaig.com/policy/index.html
+  baseURL: https://prod01.api.gaig.com/policy
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-policy-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-policy-overlay.yaml
+- name: Great American Carrier Services Document API
+  description: REST API for document storage and retrieval and for working with the cases used in underwriting
+    workflows, backed by the Great American electronic content management system.
+  humanURL: https://api-documentation.gaig.com/document/index.html
+  baseURL: https://prod01.api.gaig.com/document
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-document-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-document-overlay.yaml
+- name: Great American Carrier Services Billing API
+  description: All business functions related to billing — payments, billing accounts, payment plans,
+    bill charges and producer updates, plus One Inc payment notification acknowledgements.
+  humanURL: https://api-documentation.gaig.com/billing/index.html
+  baseURL: https://prod01.api.gaig.com/billing
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-billing-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-billing-overlay.yaml
+- name: Great American Carrier Services Ingestion API
+  description: Securely sends Great American any type of document — JSON, XML, PDF or binary — with
+    data-type discovery, multipart ingest and configured inbound webhook receivers.
+  humanURL: https://api-documentation.gaig.com/ingestion/index.html
+  baseURL: https://prod01.api.gaig.com/ingestion
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-ingestion-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-ingestion-overlay.yaml
+- name: Great American Carrier Services Risk Assessment API
+  description: Address validation and geocoding, catastrophe modeling, peril scores (wildfire, flood,
+    hail, wind, coastal storm, sinkhole), crime score, motor carrier and driver reports, sanction compliance
+    screening, property valuation and VIN lookup.
+  humanURL: https://api-documentation.gaig.com/risk-assessment/index.html
+  baseURL: https://prod01.api.gaig.com/risk-assessment
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-risk-assessment-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-risk-assessment-overlay.yaml
+- name: Great American Carrier Services Letters API
+  description: Generates printable quote letters, quote letter data and reports in the supported media
+    types.
+  humanURL: https://api-documentation.gaig.com/letters/index.html
+  baseURL: https://prod01.api.gaig.com/letters
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-letters-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-letters-overlay.yaml
+- name: Great American Carrier Services Producer API
+  description: Returns producer, agency code, business unit, hierarchy, contact, claims and billing
+    information for Great American distribution partners.
+  humanURL: https://api-documentation.gaig.com/producer/index.html
+  baseURL: https://prod01.api.gaig.com/producer
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-producer-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-producer-overlay.yaml
+- name: Great American Carrier Services Contract API
+  description: Submits, retrieves and searches contract and tracking information, including contract
+    billing.
+  humanURL: https://api-documentation.gaig.com/contract/index.html
+  baseURL: https://prod01.api.gaig.com/contract
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-contract-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-contract-overlay.yaml
+- name: Great American Carrier Services Opportunity API
+  description: Creates, reads, updates, deletes and searches potential business opportunity records.
+  humanURL: https://api-documentation.gaig.com/opportunity/index.html
+  baseURL: https://prod01.api.gaig.com/opportunity
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-opportunity-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-opportunity-overlay.yaml
+- name: Great American Carrier Services Notification API
+  description: Manages claims notification preferences — opt in, opt out, reopen, close, messages and
+    notes — and chat start and transcript retrieval.
+  humanURL: https://api-documentation.gaig.com/notification/index.html
+  baseURL: https://prod01.api.gaig.com/notification
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-notification-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Overlay
+    url: overlays/american-financial-group-notification-overlay.yaml
+- name: Great American Carrier Services Claims API
+  description: Claims business functions — first notice of loss create/update/submit, risk reports,
+    payment reporting and feedback, and service provider and service provider address management.
+  humanURL: https://api-documentation.gaig.com/claims/index.html
+  tags:
+  - Insurance
+  - Property Casualty
+  - Specialty Insurance
+  - Commercial Insurance
+  - Financial-Services
+  - OpenAPI
+  - OAuth 2.0
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-claims-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: DeveloperPortal
+    url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Notes
+    data:
+    - name: No published base URL
+      description: The provider documentation page for this API publishes the OAuth token base URLs
+        but no Environment Base URL table, so baseURL is deliberately left unset rather than guessed
+        from the sibling services.
+  - type: Overlay
+    url: overlays/american-financial-group-claims-overlay.yaml
 common:
-  - type: DomainSecurity
-    url: security/american-financial-group-domain-security.yml
-  - type: Website
-    url: https://www.afginc.com
-  - type: Website
-    url: https://www.greatamericaninsurancegroup.com
-    name: Great American Insurance Group
-  - type: Features
-    data:
-      - name: Specialty Property and Casualty Insurance
-        description: >-
-          More than 40 specialty insurance divisions serving niche markets including
-          aviation, cyber risk, environmental, equine, ocean marine, professional
-          liability, and executive liability.
-      - name: Fixed and Indexed Annuities
-        description: >-
-          Fixed, fixed indexed, and variable-indexed annuity products distributed
-          through Great American Life for retirement income and savings.
-      - name: Agricultural Insurance
-        description: >-
-          Specialized farm and ranch insurance covering crop, livestock, equipment,
-          and agribusiness operations across the United States.
-      - name: Cyber Risk Insurance
-        description: >-
-          Commercial cyber liability coverage protecting businesses from data breaches,
-          ransomware attacks, business interruption, and regulatory fines.
-      - name: Trade Credit and Political Risk
-        description: >-
-          FCIA-backed trade credit insurance and political risk coverage for businesses
-          engaged in domestic and international trade finance.
-      - name: Professional and Executive Liability
-        description: >-
-          Directors and officers, errors and omissions, employment practices liability,
-          and fiduciary liability for corporations and executives.
-  - type: UseCases
-    data:
-      - name: Specialty Commercial Risk Management
-        description: >-
-          Helping businesses in niche industries manage unique operational risks through
-          specialized insurance products tailored to their specific exposures.
-      - name: Retirement Savings and Income
-        description: >-
-          Providing retirement planning solutions through fixed indexed annuities that
-          offer growth potential with principal protection for pre-retirees.
-      - name: International Trade Finance Protection
-        description: >-
-          Protecting exporters and lenders against payment default risk and political
-          disruptions in cross-border trade transactions.
-      - name: Corporate Liability Protection
-        description: >-
-          Protecting company executives and boards from personal liability arising from
-          management decisions, fiduciary duties, and regulatory actions.
-  - type: Integrations
-    data:
-      - name: Independent Agent and Broker Networks
-        description: >-
-          Distribution through independent agents, brokers, and wholesale intermediaries
-          specializing in specialty commercial insurance lines.
-      - name: Managing General Agents
-        description: >-
-          Partnerships with managing general agents (MGAs) and program administrators
-          to distribute specialty insurance products in targeted markets.
+- type: DomainSecurity
+  url: security/american-financial-group-domain-security.yml
+- type: Website
+  url: https://www.afginc.com
+- type: Website
+  url: https://www.greatamericaninsurancegroup.com
+  name: Great American Insurance Group
+- type: Features
+  data:
+  - name: Specialty Property and Casualty Insurance
+    description: More than 40 specialty insurance divisions serving niche markets including aviation,
+      cyber risk, environmental, equine, ocean marine, professional liability, and executive liability.
+  - name: Fixed and Indexed Annuities
+    description: Fixed, fixed indexed, and variable-indexed annuity products distributed through Great
+      American Life for retirement income and savings.
+  - name: Agricultural Insurance
+    description: Specialized farm and ranch insurance covering crop, livestock, equipment, and agribusiness
+      operations across the United States.
+  - name: Cyber Risk Insurance
+    description: Commercial cyber liability coverage protecting businesses from data breaches, ransomware
+      attacks, business interruption, and regulatory fines.
+  - name: Trade Credit and Political Risk
+    description: FCIA-backed trade credit insurance and political risk coverage for businesses engaged
+      in domestic and international trade finance.
+  - name: Professional and Executive Liability
+    description: Directors and officers, errors and omissions, employment practices liability, and fiduciary
+      liability for corporations and executives.
+- type: UseCases
+  data:
+  - name: Specialty Commercial Risk Management
+    description: Helping businesses in niche industries manage unique operational risks through specialized
+      insurance products tailored to their specific exposures.
+  - name: Retirement Savings and Income
+    description: Providing retirement planning solutions through fixed indexed annuities that offer
+      growth potential with principal protection for pre-retirees.
+  - name: International Trade Finance Protection
+    description: Protecting exporters and lenders against payment default risk and political disruptions
+      in cross-border trade transactions.
+  - name: Corporate Liability Protection
+    description: Protecting company executives and boards from personal liability arising from management
+      decisions, fiduciary duties, and regulatory actions.
+- type: Integrations
+  data:
+  - name: Independent Agent and Broker Networks
+    description: Distribution through independent agents, brokers, and wholesale intermediaries specializing
+      in specialty commercial insurance lines.
+  - name: Managing General Agents
+    description: Partnerships with managing general agents (MGAs) and program administrators to distribute
+      specialty insurance products in targeted markets.
+- type: DeveloperPortal
+  url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+- type: Documentation
+  url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services/carrier-services-api-docs
+- type: APIReference
+  url: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services/carrier-services-api-docs
+- type: Support
+  url: https://www.greatamericaninsurancegroup.com/contact
+- type: Blog
+  url: https://www.greatamericaninsurancegroup.com/content-hub
+- type: TermsOfService
+  url: https://www.greatamericaninsurancegroup.com/contact/legal-disclosures
+- type: PrivacyPolicy
+  url: https://www.greatamericaninsurancegroup.com/contact/privacy
+- type: SecurityTxt
+  url: well-known/american-financial-group-security.txt
+- type: WellKnown
+  url: well-known/american-financial-group-well-known.yml
+- type: Security
+  url: security/american-financial-group-vulnerability-disclosure.yml
+- type: VulnerabilityDisclosure
+  url: security/american-financial-group-vulnerability-disclosure.yml
+- type: Authentication
+  url: authentication/american-financial-group-authentication.yml
+- type: OAuthScopes
+  url: scopes/american-financial-group-scopes.yml
+- type: Conformance
+  url: conformance/american-financial-group-conformance.yml
+- type: ErrorCatalog
+  url: errors/american-financial-group-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/american-financial-group-lifecycle.yml
+- type: Conventions
+  url: conventions/american-financial-group-conventions.yml
+- type: DataModel
+  url: data-model/american-financial-group-data-model.yml
+- type: Sandbox
+  url: sandbox/american-financial-group-sandbox.yml
+- type: RateLimits
+  url: rate-limits/american-financial-group-rate-limits.yml
+- type: Plans
+  url: plans/american-financial-group-plans-pricing.yml
+- type: Packages
+  url: packages/american-financial-group-packages.yml
+- type: LLMsTxt
+  url: llms/american-financial-group-llms.txt
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Examples
+  url: examples/american-financial-group-examples.yml
 created: '2024-11-15'
-modified: '2026-04-19'
+modified: '2026-09-02'
 maintainers:
-  - FN: Kin Lane
-    email: info@apievangelist.com
+- FN: Kin Lane
+  email: info@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-02'
+  status: enriched
+  artifacts_added: 76
+  pass: local-v1

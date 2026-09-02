@@ -1,0 +1,549 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Great American Insurance - Risk Assessment",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/endpoints": {
+      "get": {
+        "tags": ["endpoints"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs": {
+      "post": {
+        "tags": ["docs"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/synthetic": {
+      "get": {
+        "tags": ["synthetic"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/zipGuidelines": {
+      "post": {
+        "tags": ["zipGuidelines"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/aircraft/lookup": {
+      "post": {
+        "tags": ["lookup"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/lookup": {
+      "post": {
+        "tags": ["lookup"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/recommendAddress": {
+      "post": {
+        "tags": ["recommendAddress"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/validateAddress": {
+      "post": {
+        "tags": ["validateAddress"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/geocode": {
+      "post": {
+        "tags": ["geocode"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/BCEGS": {
+      "post": {
+        "tags": ["BCEGS"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/publicProtectionClassification": {
+      "post": {
+        "tags": ["publicProtectionClassification"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/buildingReport": {
+      "post": {
+        "tags": ["buildingReport"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/territory/bop": {
+      "post": {
+        "tags": ["territory/bop"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/premiumTax": {
+      "post": {
+        "tags": ["premiumTax"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/businessReport": {
+      "post": {
+        "tags": ["/location/businessReport"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/location/business/search": {
+      "post": {
+        "tags": ["/business/search"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/locationReport": {
+      "post": {
+        "tags": ["locationReport"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/catModeling/create": {
+      "post": {
+        "tags": ["catModeling/create"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/catModeling/search": {
+      "post": {
+        "tags": ["catModeling/search"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/catModeling/report": {
+      "post": {
+        "tags": ["catModeling/report"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/catModeling/reportMetadata": {
+      "post": {
+        "tags": ["catModeling/reportMetadata"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/catModeling/reportLog": {
+      "post": {
+        "tags": ["catModeling/reportLog"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/crimeScore": {
+      "post": {
+        "tags": ["crimeScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/experienceModification": {
+      "post": {
+        "tags": ["experienceModification"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/wildfireScore": {
+      "post": {
+        "tags": ["wildfireScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/coastalStormScore": {
+      "post": {
+        "tags": ["coastalStormScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/flashFloodScore": {
+      "post": {
+        "tags": ["flashFloodScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sewerBackupScore": {
+      "post": {
+        "tags": ["sewerBackupScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sinkholeScore": {
+      "post": {
+        "tags": ["sinkholeScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/floodScore": {
+      "post": {
+        "tags": ["floodScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/hailRiskScore": {
+      "post": {
+        "tags": ["hailRiskScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/windRiskScore": {
+      "post": {
+        "tags": ["windRiskScore"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/motorCarrierReport": {
+      "post": {
+        "tags": ["motorCarrierReport"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctionCompliance": {
+      "post": {
+        "tags": ["sanctionCompliance"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctionCompliance/batch": {
+      "post": {
+        "tags": ["sanctionCompliance/batch"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctionCompliance/batch/create": {
+      "post": {
+        "tags": ["sanctionCompliance/batch/create"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctionCompliance/batch/delete": {
+      "post": {
+        "tags": ["sanctionCompliance/batch/delete"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctionCompliance/batch/read": {
+      "post": {
+        "tags": ["sanctionCompliance/batch/read"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctionCompliance/batch/search": {
+      "post": {
+        "tags": ["sanctionCompliance/batch/search"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctionCompliance/batch/validate": {
+      "post": {
+        "tags": ["sanctionCompliance/batch/validate"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/businessClassification": {
+      "post": {
+        "tags": ["businessClassification"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/organization": {
+      "post": {
+        "tags": ["organization"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/organization/search": {
+      "post": {
+        "tags": ["search"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/taxonomyCodes": {
+      "post": {
+        "tags": ["taxonomyCodes"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/propertyValuation": {
+      "post": {
+        "tags": ["propertyValuation"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/propertyValuation/link": {
+      "post": {
+        "tags": ["propertyValuation/link"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/propertyValuation/search": {
+      "post": {
+        "tags": ["propertyValuation/search"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/protectionClass": {
+      "post": {
+        "tags": ["protectionClass"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getDriverReport": {
+      "post": {
+        "tags": ["getDriverReport"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/orderDriverReport": {
+      "post": {
+        "tags": ["orderDriverReport"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/coastalDistance": {
+      "post": {
+        "tags": ["coastalDistance"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/moratorium": {
+      "post": {
+        "tags": ["moratorium"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/vin/lookup": {
+      "post": {
+        "tags": ["lookup"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/vin/verify": {
+      "post": {
+        "tags": ["verify"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

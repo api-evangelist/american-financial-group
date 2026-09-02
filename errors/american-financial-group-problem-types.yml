@@ -1,0 +1,95 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/policy/index.html
+format: proprietary
+media_type: application/json
+note: >-
+  Not RFC 9457. Great American publishes an identical HTTP status-code contract on all 18 Carrier
+  Services API reference pages, with three distinct error envelopes depending on where the failure is
+  raised: the application returns an `errors[]` array on 400, the Apigee gateway returns a `fault`
+  object on 401, and the Spring-style handler returns a flat timestamp/status/error/message/path object
+  on 500 and 501. There is no published registry of `code` values — the field is documented as
+  machine-readable but its vocabulary is not enumerated, so a consumer cannot branch on codes without
+  observing them at runtime.
+envelopes:
+  - id: validation
+    applies_to: ['400']
+    shape:
+      errors:
+        - category: string
+          code: string
+          message: string
+    fields:
+      - name: category
+        description: The category of the error.
+      - name: code
+        description: Machine-readable value so the consuming system can respond to a given error programmatically.
+      - name: message
+        description: Human readable message describing the error.
+    example:
+      errors:
+        - category: Invalid Request
+          code: INVALID
+          message: The request was missing some piece of data.
+  - id: gateway-fault
+    applies_to: ['401']
+    shape:
+      fault:
+        faultstring: string
+        detail:
+          errorcode: string
+    example:
+      fault:
+        faultstring: Invalid Access Token
+        detail:
+          errorcode: keymanagement.service.invalid_access_token
+  - id: server-error
+    applies_to: ['500', '501']
+    shape:
+      timestamp: string
+      status: integer
+      error: string
+      message: string
+      path: string
+problem_types:
+  - status: 200
+    title: OK
+    description: >-
+      The request has succeeded. Response bodies are not described in the OpenAPI documents; POST /api/docs
+      returns the response shape for a given endpoint and consumer.
+  - status: 400
+    title: Bad Request
+    envelope: validation
+    description: The server could not understand the request due to invalid syntax; some 400s carry additional JSON structure alongside errors[].
+    remediation: Read errors[].code and correct the request. POST /api/docs with type=request returns the required body for the endpoint.
+  - status: 401
+    title: Unauthorized
+    envelope: gateway-fault
+    description: Semantically unauthenticated — the client must present a valid bearer token.
+    remediation: Re-request a token from {env}/oauth/token with grant_type=client_credentials; tokens expire in 3599 seconds.
+  - status: 403
+    title: Forbidden
+    description: The client identity is known but lacks access rights to the resource.
+    remediation: The granted API products are listed in api_product_list_json on the token response; contact API support to extend entitlement.
+  - status: 404
+    title: Not Found
+    description: The endpoint is not available on this API.
+  - status: 500
+    title: Internal Server Error
+    envelope: server-error
+    description: The server encountered a situation it does not know how to handle.
+    remediation: Documented message directs the caller to contact DL-GAI.ITServices.GASLab-APISupport@GAIG.COM.
+  - status: 501
+    title: Not Implemented
+    envelope: server-error
+    description: >-
+      Returned when the endpoint is not relevant for this client. These APIs serve multiple business
+      divisions and products, so entitlement is per consumer.
+    remediation: Call GET /api/endpoints first to learn which endpoints this client may call.
+error_code_registry:
+  published: false
+  observed_codes:
+    - code: INVALID
+      source: documented 400 example
+    - code: keymanagement.service.invalid_access_token
+      source: documented 401 Apigee fault example

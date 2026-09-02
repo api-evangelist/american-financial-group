@@ -1,0 +1,179 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Great American Insurance Policy",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/endpoints": {
+      "get": {
+        "tags": ["endpoints"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs": {
+      "post": {
+        "tags": ["docs"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/createPayments": {
+      "post": {
+        "tags": ["payments"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/updateProducers": {
+      "post": {
+        "tags": ["producers"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getAccountDetails": {
+      "post": {
+        "tags": ["ivr"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getAuthenticatedAccountDetails": {
+      "post": {
+        "tags": ["ivr"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getAuthenticatedAccountDetailsV2": {
+      "post": {
+        "tags": ["ivr"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getPoliciesForAccount": {
+      "post": {
+        "tags": ["ivr"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/createNewBillingAccount": {
+      "post": {
+        "tags": ["billing-account"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/updateBillingAccount": {
+      "post": {
+        "tags": ["billing-account"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getPaymentPlans": {
+      "post": {
+        "tags": ["billing-account"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/billCharges": {
+      "post": {
+        "tags": ["post"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/synthetic": {
+      "get": {
+        "tags": ["synthetic"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/oneinc/notifications/acknowledgePayments": {
+      "post": {
+        "tags": ["billing-webhook"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/oneinc/notifications/acknowledgeScheduledPayments": {
+      "post": {
+        "tags": ["billing-webhook"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/oneinc/notifications/acknowledgePaymentMethods": {
+      "post": {
+        "tags": ["billing-webhook"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/oneinc/notifications/acknowledgeAutopayDetails": {
+      "post": {
+        "tags": ["billing-webhook"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

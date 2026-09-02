@@ -1,0 +1,89 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Notification
+  version: 1.0.0
+paths:
+  /api/endpoints:
+    get:
+      tags:
+      - endpoints
+      responses:
+        '200':
+          description: OK
+  /api/docs:
+    post:
+      tags:
+      - docs
+      responses:
+        '200':
+          description: OK
+  /api/claims/optIn:
+    post:
+      tags:
+      - optIn
+      responses:
+        '200':
+          description: OK
+  /api/claims/optOut:
+    post:
+      tags:
+      - optOut
+      responses:
+        '200':
+          description: OK
+  /api/claims/reOpen:
+    post:
+      tags:
+      - reOpen
+      responses:
+        '200':
+          description: OK
+  /api/claims/messages:
+    post:
+      tags:
+      - messages
+      responses:
+        '200':
+          description: OK
+  /api/claims/close:
+    post:
+      tags:
+      - close
+      responses:
+        '200':
+          description: OK
+  /api/claims/notes:
+    post:
+      tags:
+      - notes
+      responses:
+        '200':
+          description: OK
+  /api/chat/start:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/chat/transcript:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/synthetic:
+    get:
+      tags:
+      - synthetic
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/notification
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/notification
+  description: UAT
+- url: https://dev01.api.gaig.com/notification
+  description: DEV

@@ -1,0 +1,90 @@
+generated: '2026-09-02'
+method: probed
+source: live GET of each named /.well-known/ path on every apis.yml Website host, the API host and the docs host
+note: >-
+  A served security.txt was found on the Great American Insurance Group web hosts (www.greatamericaninsurancegroup.com
+  and its www.gaig.com alias), pointing at the GAIG Vulnerability Disclosure Program. Every other named path 404s
+  on every host. www.afginc.com sits behind an edge policy that answers 403 "Access Denied" to non-browser clients
+  for every path probed, including /.well-known/*, so its well-known surface could not be read — recorded as 403,
+  not as an absence.
+hosts:
+  - host: www.greatamericaninsurancegroup.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: well-known/american-financial-group-security.txt
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: www.gaig.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: well-known/american-financial-group-security.txt
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: prod01.api.gaig.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: api-documentation.gaig.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: www.afginc.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
+      - path: /.well-known/agent.json
+        status: 403

@@ -1,0 +1,25 @@
+generated: '2026-09-02'
+method: generated
+source: >-
+  openapi/american-financial-group-*-openapi.yml and https://api-documentation.gaig.com/{service}/index.html;
+  every operation referenced in these skills was verified against a harvested specification path.
+provider: American Financial Group — Great American Carrier Services
+note: >-
+  Great American publishes no AGENTS.md and no provider-authored skills; these are API Evangelist
+  generated skills grounded in the published operations. The Carrier Services OpenAPI documents declare no
+  operationIds and no schemas, so each step names the HTTP method and path — the identifiers the provider
+  actually publishes — and every skill instructs the agent to fetch its body shape from POST /api/docs
+  rather than assume one.
+skills:
+  - name: quote-and-bind-new-business
+    file: skills/american-financial-group-quote-and-bind-new-business.md
+    apis: [shop, risk-selection, rating, product, submission]
+    risk: bind is irreversible; no idempotency key
+  - name: issue-and-service-a-policy
+    file: skills/american-financial-group-issue-and-service-a-policy.md
+    apis: [issuance, policy, forms, billing, document]
+    risk: cancel exists but its window is only discoverable at runtime via POST /api/cancelDates; payments have no published reversal
+  - name: report-a-claim
+    file: skills/american-financial-group-report-a-claim.md
+    apis: [claims, notification, policy]
+    risk: submitted FNOL cannot be withdrawn; claims base URL is not published

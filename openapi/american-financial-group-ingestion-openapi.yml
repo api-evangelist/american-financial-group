@@ -1,0 +1,44 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Ingestion
+  version: 0.187.0
+paths:
+  /api/dataTypes:
+    post:
+      responses:
+        '200':
+          description: OK
+  /api/ingest:
+    post:
+      responses:
+        '200':
+          description: OK
+  /api/webhook/{webhook}:
+    post:
+      parameters:
+      - name: webhook
+        in: path
+        required: true
+        description: The name of the webhook configuration
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+  /api/ingestMultipart:
+    post:
+      responses:
+        '200':
+          description: OK
+  /api/ingestDocument:
+    post:
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/ingestion
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/ingestion
+  description: UAT
+- url: https://dev01.api.gaig.com/ingestion
+  description: DEV

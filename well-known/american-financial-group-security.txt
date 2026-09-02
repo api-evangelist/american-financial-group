@@ -1,0 +1,3 @@
+Policy: https://vdp.gaig.com
+Contact: vulnerability@gaig.com
+

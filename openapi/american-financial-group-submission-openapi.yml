@@ -1,0 +1,103 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Submission
+  version: 1.0.0
+paths:
+  /api/endpoints:
+    get:
+      tags:
+      - endpoints
+      responses:
+        '200':
+          description: OK
+  /api/docs:
+    post:
+      tags:
+      - docs
+      responses:
+        '200':
+          description: OK
+  /api/products:
+    get:
+      tags:
+      - get
+      responses:
+        '200':
+          description: OK
+  /api/create:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/create/renewal:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/read:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/underwriters:
+    post:
+      tags:
+      - underwriters
+      responses:
+        '200':
+          description: OK
+  /api/update:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/bind:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/assign:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/search:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: Search submissions
+  /api/setStatus:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/synthetic:
+    get:
+      tags:
+      - synthetic
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/submission
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/submission
+  description: UAT
+- url: https://dev01.api.gaig.com/submission
+  description: DEV

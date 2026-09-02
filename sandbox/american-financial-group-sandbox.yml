@@ -1,0 +1,42 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/policy/index.html
+summary: >-
+  Great American publishes three named environments for every Carrier Services API — DEV, UAT and PROD —
+  each with its own base URL and its own OAuth token endpoint, and the onboarding process explicitly
+  includes a development/testing phase and a UAT phase before production. There is no self-service
+  sandbox: credentials for DEV/UAT are issued through the Carrier Services engagement.
+self_service: false
+environments:
+  - name: DEV
+    base_url_pattern: https://dev01.api.gaig.com/{service}
+    token_endpoint: https://dev01.api.gaig.com/oauth/token
+    purpose: Development engagement — feature development and testing.
+  - name: UAT
+    base_url_pattern: https://uat01.api.gaig.com/{service}
+    token_endpoint: https://uat01.api.gaig.com/oauth/token
+    purpose: User acceptance testing prior to production delivery.
+  - name: PROD
+    base_url_pattern: https://prod01.api.gaig.com/{service}
+    token_endpoint: https://prod01.api.gaig.com/oauth/token
+    purpose: Production.
+environment_signal_in_credentials:
+  field: api_product_list_json
+  note: >-
+    The granted API products carry the environment in the identifier — the documented example values are
+    "issuance-dev" and "rating-dev" — so a token itself tells the client which environment it is scoped to.
+test_data:
+  published: false
+  note: >-
+    No test cards, magic identifiers, fixture policies or seeded test accounts are published. Request and
+    response shapes are not static either: POST /api/docs returns the request/response body a given
+    consumer should send for a given endpoint, scoped by factors such as business division, product and
+    state, so test payloads are obtained from the live API rather than from a published fixture set.
+onboarding:
+  process:
+    - Discovery Session — understand needs and review offerings.
+    - Business Specification and Requirements — deep-dive assessment.
+    - Development Engagement — feature development and testing.
+    - Delivery and Support Discussion — UAT and production support.
+  contact: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  support_email: DL-GAI.ITServices.GASLab-APISupport@GAIG.COM

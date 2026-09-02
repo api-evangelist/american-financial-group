@@ -1,0 +1,13 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/policy/index.html
+limit_count: 0
+rate_limits: []
+response_headers: []
+exhaustion_status: null
+note: >-
+  Read all 18 published Great American Carrier Services API reference pages plus the Carrier Services
+  developer portal: no rate limit, quota, throttle, burst, 429 status or RateLimit/X-RateLimit/Retry-After
+  response header is documented anywhere. The published HTTP status code tables cover 200, 400, 401, 403,
+  404, 500 and 501 only — 429 is absent from every page. Limits, if enforced at the Apigee gateway, are
+  agreed bilaterally during onboarding and are not public, so an agent cannot plan for them from the docs.

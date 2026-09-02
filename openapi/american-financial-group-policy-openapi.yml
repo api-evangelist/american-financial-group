@@ -1,0 +1,89 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Policy
+  version: 1.0.0
+paths:
+  /api/endpoints:
+    get:
+      tags:
+      - endpoints
+      responses:
+        '200':
+          description: OK
+  /api/docs:
+    post:
+      tags:
+      - docs
+      responses:
+        '200':
+          description: OK
+  /api/synthetic:
+    get:
+      tags:
+      - synthetic
+      responses:
+        '200':
+          description: OK
+  /api/enrollment:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/cancelDates:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/quote:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/policy:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/transactions:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/certificate:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/verifyMasterPolicy:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/requestMasterPolicy:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/policy
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/policy
+  description: UAT
+- url: https://dev01.api.gaig.com/policy
+  description: DEV

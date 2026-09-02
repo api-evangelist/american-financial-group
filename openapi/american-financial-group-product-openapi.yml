@@ -1,0 +1,89 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Product
+  version: 1.0.0
+paths:
+  /api/endpoints:
+    get:
+      tags:
+      - endpoints
+      responses:
+        '200':
+          description: OK
+  /api/docs:
+    post:
+      tags:
+      - docs
+      responses:
+        '200':
+          description: OK
+  /api/classCodes:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/programCodes:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/symbols:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/categories:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/submitCategories:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/availability:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/classOfBusiness:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/products:
+    post:
+      tags:
+      - products
+      responses:
+        '200':
+          description: OK
+  /api/synthetic:
+    get:
+      tags:
+      - synthetic
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/product
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/product
+  description: UAT
+- url: https://dev01.api.gaig.com/product
+  description: DEV

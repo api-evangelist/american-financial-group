@@ -1,0 +1,38 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  npm registry search (gaig, greatamerican, afginc, "great american insurance"), PyPI, RubyGems,
+  crates.io and NuGet queries, plus the Carrier Services API documentation pages
+official_sdk_count: 0
+packages:
+  - language: javascript
+    registry: npm
+    name: gaig-form-controls
+    url: https://www.npmjs.com/package/gaig-form-controls
+    install: npm install gaig-form-controls
+    version: 0.0.32
+    published: '2023-11-16'
+    official: false
+    note: >-
+      Angular form-control library. Maintainer handles (scastoro-gaig, jdoragaig) read as Great American
+      staff accounts, but the package declares no homepage, repository, author or license pointing at a
+      GAIG-controlled domain, so first-party ownership is NOT proven and official is recorded as false.
+      It is internal UI tooling in any case — it is not a client for the Carrier Services APIs.
+  - language: javascript
+    registry: npm
+    name: gaigux-cli
+    url: https://www.npmjs.com/package/gaigux-cli
+    install: npm install -g gaigux-cli
+    version: 0.9.5
+    published: '2014-09-18'
+    official: false
+    note: >-
+      "Command Line Interface for GAIG UX Development", published by the npm user gaigux. No homepage,
+      repository or author field ties it to a Great American domain, so ownership is unproven. Last
+      published 2014-09-18 — twelve years stale and unrelated to the Carrier Services API surface.
+note: >-
+  Great American publishes no first-party client SDK, in any language, for the Carrier Services APIs. The
+  documentation is HTTP-level only (curl-shaped request/response examples) and there is no SourceCode,
+  SDK or GitHub organization link anywhere on the developer portal or the 18 API reference pages.
+  github.com/gaig was checked and belongs to an unrelated individual, not the company. The two npm
+  entries above are recorded as unverified candidates, not as SDKs, and no `SDKs` pointer is emitted.

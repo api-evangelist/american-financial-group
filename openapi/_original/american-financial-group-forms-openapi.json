@@ -1,0 +1,194 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Great American Insurance - Forms",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/endpoints": {
+      "get": {
+        "tags": ["endpoints"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/docs": {
+      "post": {
+        "tags": ["docs"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/attach": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/attach",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/formFields": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/formFields",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/generatePDF": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/generatePDF",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getCompleteFormsList": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/getCompleteFormsList",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getSelectableFormsList": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/getSelectableFormsList",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getPrintOrders": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/getPrintOrders",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/getPrintOrdersOrderedByPrintTier": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/getPrintOrdersOrderedByPrintTier",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    
+    "/api/load": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/load",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sample": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/sample",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/save": {
+      "post": {
+        "tags": ["post"],
+        "operationId": "/api/save",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/search": {
+      "get": {
+        "tags": ["get"],
+        "operationId": "/api/search",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/datatypes": {
+      "get": {
+        "tags": ["get"],
+        "operationId": "/api/datatypes",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/globalFields": {
+      "get": {
+        "tags": ["get"],
+        "operationId": "/api/globalFields",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/searchVersion": {
+      "get": {
+        "tags": ["get"],
+        "operationId": "/api/searchVersion",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/synthetic": {
+      "get": {
+        "tags": ["synthetic"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

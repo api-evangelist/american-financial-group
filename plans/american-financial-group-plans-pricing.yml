@@ -1,0 +1,14 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+plan_count: 0
+plans: []
+pricing_model: not-published
+self_service_signup: false
+note: >-
+  Great American publishes no plans, tiers, price list or metered rate for the Carrier Services APIs.
+  Access is a B2B relationship: the portal directs prospective consumers to contact their business
+  representative, and the published onboarding path is a four-phase engagement (Discovery Session,
+  Business Specification and Requirements, Development Engagement, Delivery and Support Discussion).
+  These are carrier integration APIs for appointed agents, brokers and program partners, not a
+  commercially priced API product — plan_count is an honest zero, not an unfound page.

@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Opportunity
+  version: 1.0.0
+paths:
+  /api/endpoints:
+    get:
+      tags:
+      - endpoints
+      responses:
+        '200':
+          description: OK
+  /api/docs:
+    post:
+      tags:
+      - docs
+      responses:
+        '200':
+          description: OK
+  /api/create:
+    post:
+      tags:
+      - create
+      responses:
+        '200':
+          description: OK
+  /api/read:
+    post:
+      tags:
+      - read
+      responses:
+        '200':
+          description: OK
+  /api/update:
+    post:
+      tags:
+      - update
+      responses:
+        '200':
+          description: OK
+  /api/delete:
+    post:
+      tags:
+      - delete
+      responses:
+        '200':
+          description: OK
+  /api/search:
+    post:
+      tags:
+      - search
+      responses:
+        '200':
+          description: OK
+  /api/synthetic:
+    get:
+      tags:
+      - synthetic
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/opportunity
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/opportunity
+  description: UAT
+- url: https://dev01.api.gaig.com/opportunity
+  description: DEV

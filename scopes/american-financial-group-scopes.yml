@@ -1,0 +1,18 @@
+generated: '2026-09-02'
+method: searched
+source: https://api-documentation.gaig.com/policy/index.html
+docs: https://api-documentation.gaig.com/policy/index.html
+oauth:
+  flow: clientCredentials
+  token_endpoint_prod: https://prod01.api.gaig.com/oauth/token
+scope_count: 0
+scopes: []
+authorization_model: api-products
+note: >-
+  Great American secures every Carrier Services API with OAuth 2.0 client_credentials but publishes no
+  named scope vocabulary. Authorization is carried instead by `api_product_list_json` on the token
+  response — an array of granted API product identifiers (documented example: ["issuance-dev","rating-dev"]) —
+  and is further narrowed per consumer at runtime: GET /api/endpoints returns only the endpoints that
+  client is entitled to call, and a call to an unentitled endpoint returns 501 Not Implemented. The
+  published scope list is therefore genuinely empty, not merely unfound; the entitlement surface is
+  per-client and must be read from the live /api/endpoints response.

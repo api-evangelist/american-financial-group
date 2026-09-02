@@ -1,0 +1,124 @@
+openapi: 3.0.3
+info:
+  title: Great American Insurance - Issuance
+  version: 1.0.0
+paths:
+  /api/endpoints:
+    get:
+      tags:
+      - endpoints
+      responses:
+        '200':
+          description: OK
+  /api/docs:
+    post:
+      tags:
+      - docs
+      responses:
+        '200':
+          description: OK
+  /api/customerNumber:
+    get:
+      tags:
+      - get
+      responses:
+        '200':
+          description: OK
+  /api/issue:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/emision:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/impresion:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/policyControlDate:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/policyNumber:
+    get:
+      tags:
+      - get
+      responses:
+        '200':
+          description: OK
+  /api/enroll:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/re-enroll:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/cancel:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/policyMod:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/enrollmentChange:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/enrollmentCoverageChange:
+    post:
+      tags:
+      - post
+      responses:
+        '200':
+          description: OK
+  /api/validate/*/quotes/*:
+    get:
+      tags:
+      - get
+      responses:
+        '200':
+          description: OK
+  /api/synthetic:
+    get:
+      tags:
+      - synthetic
+      responses:
+        '200':
+          description: OK
+servers:
+- url: https://prod01.api.gaig.com/issuance
+  description: PROD — base URL published on the Great American Carrier Services API documentation page
+- url: https://uat01.api.gaig.com/issuance
+  description: UAT
+- url: https://dev01.api.gaig.com/issuance
+  description: DEV
