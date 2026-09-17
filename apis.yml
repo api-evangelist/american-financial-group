@@ -54,93 +54,6 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/american-financial-group.png
 access: 3rd-Party
 apis:
-- aid: american-financial-group:american-financial-group-agencycodes-api
-  name: American Financial Group Agency Codes API
-  description: The agencyCodes API from American Financial Group — 1 operation(s) for agencycodes.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - agencyCodes
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-agencycodes-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
 - aid: american-financial-group:american-financial-group-application-api
   name: American Financial Group Application API
   description: The application API from American Financial Group — 1 operation(s) for application.
@@ -852,180 +765,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/american-financial-group-businessclassification-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-businessunit-api
-  name: American Financial Group Business Unit API
-  description: The businessUnit API from American Financial Group — 1 operation(s) for businessunit.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - businessUnit
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-businessunit-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-businessunits-api
-  name: American Financial Group Business Units API
-  description: The businessUnits API from American Financial Group — 1 operation(s) for businessunits.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - businessUnits
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-businessunits-api-openapi.yml
   - type: Documentation
     url: https://api-documentation.gaig.com/shop/index.html
   - type: APIReference
@@ -2077,93 +1816,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/american-financial-group-crimescore-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-datatypes-api
-  name: American Financial Group Data Types API
-  description: The DataTypes API from American Financial Group — 1 operation(s) for datatypes.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - DataTypes
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-datatypes-api-openapi.yml
   - type: Documentation
     url: https://api-documentation.gaig.com/shop/index.html
   - type: APIReference
@@ -3901,93 +3553,6 @@ apis:
     url: https://api-documentation.gaig.com/claims/index.html
   - type: APIReference
     url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-mediatypes-api
-  name: American Financial Group Media Types API
-  description: The mediaTypes API from American Financial Group — 1 operation(s) for mediatypes.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - mediaTypes
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-mediatypes-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
 - aid: american-financial-group:american-financial-group-messages-api
   name: American Financial Group Messages API
   description: The messages API from American Financial Group — 1 operation(s) for messages.
@@ -4260,180 +3825,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/american-financial-group-notes-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-optin-api
-  name: American Financial Group Opt In API
-  description: The optIn API from American Financial Group — 1 operation(s) for optin.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - optIn
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-optin-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-optout-api
-  name: American Financial Group Opt Out API
-  description: The optOut API from American Financial Group — 1 operation(s) for optout.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - optOut
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-optout-api-openapi.yml
   - type: Documentation
     url: https://api-documentation.gaig.com/shop/index.html
   - type: APIReference
@@ -5394,94 +4785,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/american-financial-group-products-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-propertyvaluation-api
-  name: American Financial Group Property Valuation API
-  description: >-
-    The propertyValuation API from American Financial Group — 1 operation(s) for propertyvaluation.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - propertyValuation
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-propertyvaluation-api-openapi.yml
   - type: Documentation
     url: https://api-documentation.gaig.com/shop/index.html
   - type: APIReference
@@ -7834,94 +7137,6 @@ apis:
     url: https://api-documentation.gaig.com/claims/index.html
   - type: APIReference
     url: https://api-documentation.gaig.com/claims/index.html
-- aid: american-financial-group:american-financial-group-validateaddress-api
-  name: American Financial Group Validate Address API
-  description: >-
-    The validateAddress API from American Financial Group — 1 operation(s) for validateaddress.
-  humanURL: https://api-documentation.gaig.com/shop/index.html
-  baseURL: https://prod01.api.gaig.com/shop
-  tags:
-  - validateAddress
-  properties:
-  - type: OpenAPI
-    url: openapi/american-financial-group-validateaddress-api-openapi.yml
-  - type: Documentation
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/shop/index.html
-  - type: DeveloperPortal
-    url: >-
-      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
-  - type: Documentation
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/submission/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/product/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-selection/index.html
-  - type: Notes
-    url: null
-  - type: Documentation
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/rating/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/forms/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/issuance/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/policy/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/document/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/billing/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/ingestion/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/risk-assessment/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/letters/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/producer/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/contract/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/opportunity/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/notification/index.html
-  - type: Documentation
-    url: https://api-documentation.gaig.com/claims/index.html
-  - type: APIReference
-    url: https://api-documentation.gaig.com/claims/index.html
 - aid: american-financial-group:american-financial-group-verify-api
   name: American Financial Group Verify API
   description: The verify API from American Financial Group — 1 operation(s) for verify.
@@ -8280,6 +7495,792 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/american-financial-group-zipguidelines-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-agency-codes-api
+  name: American Financial Group agency codes API
+  description: The agency codes API from American Financial Group — 1 operation(s) for agency codes.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - agency codes
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-agency-codes-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-business-unit-api
+  name: American Financial Group Business Unit API
+  description: The Business Unit API from American Financial Group — 1 operation(s) for business unit.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Business Unit
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-business-unit-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-business-units-api
+  name: American Financial Group Business Units API
+  description: >-
+    The Business Units API from American Financial Group — 1 operation(s) for business units.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Business Units
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-business-units-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-data-types-api
+  name: American Financial Group Data Types API
+  description: The Data Types API from American Financial Group — 1 operation(s) for data types.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Data Types
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-data-types-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-media-types-api
+  name: American Financial Group Media types API
+  description: The Media types API from American Financial Group — 1 operation(s) for media types.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Media types
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-media-types-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-opt-in-api
+  name: American Financial Group Opt In API
+  description: The Opt In API from American Financial Group — 1 operation(s) for opt in.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Opt In
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-opt-in-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-opt-out-api
+  name: American Financial Group opt Out API
+  description: The opt Out API from American Financial Group — 1 operation(s) for opt out.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - opt Out
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-opt-out-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-property-valuation-api
+  name: American Financial Group Property - Valuation API
+  description: >-
+    The Property - Valuation API from American Financial Group — 1 operation(s) for property - valuation.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Property - Valuation
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-property-valuation-api-openapi.yml
+  - type: Documentation
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/shop/index.html
+  - type: DeveloperPortal
+    url: >-
+      https://www.greatamericaninsurancegroup.com/agents-brokers/great-american-carrier-services
+  - type: Documentation
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/submission/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/product/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-selection/index.html
+  - type: Notes
+    url: null
+  - type: Documentation
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/rating/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/forms/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/issuance/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/policy/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/document/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/billing/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/ingestion/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/risk-assessment/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/letters/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/producer/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/contract/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/opportunity/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/notification/index.html
+  - type: Documentation
+    url: https://api-documentation.gaig.com/claims/index.html
+  - type: APIReference
+    url: https://api-documentation.gaig.com/claims/index.html
+- aid: american-financial-group:american-financial-group-validate-address-api
+  name: American Financial Group Validate Address API
+  description: >-
+    The Validate Address API from American Financial Group — 1 operation(s) for validate address.
+  humanURL: https://api-documentation.gaig.com/shop/index.html
+  baseURL: https://prod01.api.gaig.com/shop
+  tags:
+  - Validate Address
+  properties:
+  - type: OpenAPI
+    url: openapi/american-financial-group-validate-address-api-openapi.yml
   - type: Documentation
     url: https://api-documentation.gaig.com/shop/index.html
   - type: APIReference
