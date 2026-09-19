@@ -60,6 +60,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Application
+  tags_raw:
   - application
   properties:
   - type: OpenAPI
@@ -235,6 +237,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Billing Account
+  tags_raw:
   - billing-account
   properties:
   - type: OpenAPI
@@ -322,6 +326,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Billing
+  tags_raw:
   - billing
   properties:
   - type: OpenAPI
@@ -496,7 +502,8 @@ apis:
   description: The billingInfo API from American Financial Group — 1 operation(s) for billinginfo.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - billingInfo
   properties:
   - type: OpenAPI
@@ -584,7 +591,8 @@ apis:
     The buildingReport API from American Financial Group — 1 operation(s) for buildingreport.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - buildingReport
   properties:
   - type: OpenAPI
@@ -673,6 +681,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Business Search
+  tags_raw:
   - /business/search
   properties:
   - type: OpenAPI
@@ -760,7 +770,8 @@ apis:
     The businessClassification API from American Financial Group — 1 operation(s) for businessclassification.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - businessClassification
   properties:
   - type: OpenAPI
@@ -1288,6 +1299,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Claims
+  tags_raw:
   - claims
   properties:
   - type: OpenAPI
@@ -1375,6 +1388,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Close
+  tags_raw:
   - close
   properties:
   - type: OpenAPI
@@ -1462,7 +1477,8 @@ apis:
     The coastalDistance API from American Financial Group — 1 operation(s) for coastaldistance.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - coastalDistance
   properties:
   - type: OpenAPI
@@ -1550,7 +1566,8 @@ apis:
     The coastalStormScore API from American Financial Group — 1 operation(s) for coastalstormscore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - coastalStormScore
   properties:
   - type: OpenAPI
@@ -1638,6 +1655,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Contract
+  tags_raw:
   - contract
   properties:
   - type: OpenAPI
@@ -1724,7 +1743,8 @@ apis:
   description: The create API from American Financial Group — 1 operation(s) for create.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - create
   properties:
   - type: OpenAPI
@@ -1811,7 +1831,8 @@ apis:
   description: The crimeScore API from American Financial Group — 1 operation(s) for crimescore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - crimeScore
   properties:
   - type: OpenAPI
@@ -1898,7 +1919,8 @@ apis:
   description: The delete API from American Financial Group — 3 operation(s) for delete.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - delete
   properties:
   - type: OpenAPI
@@ -1986,6 +2008,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Docs
+  tags_raw:
   - docs
   properties:
   - type: OpenAPI
@@ -2072,7 +2096,8 @@ apis:
   description: The endpoints API from American Financial Group — 1 operation(s) for endpoints.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - endpoints
   properties:
   - type: OpenAPI
@@ -2160,7 +2185,8 @@ apis:
     The experienceModification API from American Financial Group — 1 operation(s) for experiencemodification.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - experienceModification
   properties:
   - type: OpenAPI
@@ -2248,7 +2274,8 @@ apis:
     The flashFloodScore API from American Financial Group — 1 operation(s) for flashfloodscore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - flashFloodScore
   properties:
   - type: OpenAPI
@@ -2335,7 +2362,8 @@ apis:
   description: The floodScore API from American Financial Group — 1 operation(s) for floodscore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - floodScore
   properties:
   - type: OpenAPI
@@ -2423,6 +2451,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Geocode
+  tags_raw:
   - geocode
   properties:
   - type: OpenAPI
@@ -2509,7 +2539,8 @@ apis:
   description: The get API from American Financial Group — 55 operation(s) for get.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - get
   properties:
   - type: OpenAPI
@@ -2597,7 +2628,8 @@ apis:
     The getDriverReport API from American Financial Group — 1 operation(s) for getdriverreport.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - getDriverReport
   properties:
   - type: OpenAPI
@@ -2684,7 +2716,8 @@ apis:
   description: The hailRiskScore API from American Financial Group — 1 operation(s) for hailriskscore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - hailRiskScore
   properties:
   - type: OpenAPI
@@ -2772,6 +2805,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Hierarchy
+  tags_raw:
   - hierarchy
   properties:
   - type: OpenAPI
@@ -2859,6 +2894,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Info
+  tags_raw:
   - info
   properties:
   - type: OpenAPI
@@ -3209,6 +3246,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - IVR
+  tags_raw:
   - ivr
   properties:
   - type: OpenAPI
@@ -3296,7 +3335,8 @@ apis:
     The /location/businessReport API from American Financial Group — 1 operation(s) for /location/businessreport.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - /location/businessReport
   properties:
   - type: OpenAPI
@@ -3384,7 +3424,8 @@ apis:
     The locationReport API from American Financial Group — 1 operation(s) for locationreport.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - locationReport
   properties:
   - type: OpenAPI
@@ -3472,6 +3513,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Lookup
+  tags_raw:
   - lookup
   properties:
   - type: OpenAPI
@@ -3559,6 +3602,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Message
+  tags_raw:
   - messages
   properties:
   - type: OpenAPI
@@ -3733,7 +3778,8 @@ apis:
     The motorCarrierReport API from American Financial Group — 1 operation(s) for motorcarrierreport.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - motorCarrierReport
   properties:
   - type: OpenAPI
@@ -3821,6 +3867,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Notes
+  tags_raw:
   - notes
   properties:
   - type: OpenAPI
@@ -3908,7 +3956,8 @@ apis:
     The orderDriverReport API from American Financial Group — 1 operation(s) for orderdriverreport.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - orderDriverReport
   properties:
   - type: OpenAPI
@@ -3996,6 +4045,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Organization
+  tags_raw:
   - organization
   properties:
   - type: OpenAPI
@@ -4082,7 +4133,8 @@ apis:
   description: The patch API from American Financial Group — 6 operation(s) for patch.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - patch
   properties:
   - type: OpenAPI
@@ -4170,6 +4222,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Payments
+  tags_raw:
   - payments
   properties:
   - type: OpenAPI
@@ -4256,7 +4310,8 @@ apis:
   description: The post API from American Financial Group — 115 operation(s) for post.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - post
   properties:
   - type: OpenAPI
@@ -4343,7 +4398,8 @@ apis:
   description: The premiumTax API from American Financial Group — 1 operation(s) for premiumtax.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - premiumTax
   properties:
   - type: OpenAPI
@@ -4431,7 +4487,8 @@ apis:
     The printableQuoteLetter API from American Financial Group — 1 operation(s) for printablequoteletter.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - printableQuoteLetter
   properties:
   - type: OpenAPI
@@ -4519,6 +4576,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Producer
+  tags_raw:
   - producer
   properties:
   - type: OpenAPI
@@ -4606,7 +4665,8 @@ apis:
     The producerContacts API from American Financial Group — 1 operation(s) for producercontacts.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - producerContacts
   properties:
   - type: OpenAPI
@@ -4694,6 +4754,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Producers
+  tags_raw:
   - producers
   properties:
   - type: OpenAPI
@@ -4781,6 +4843,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Product
+  tags_raw:
   - products
   properties:
   - type: OpenAPI
@@ -5044,7 +5108,8 @@ apis:
     The protectionClass API from American Financial Group — 1 operation(s) for protectionclass.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - protectionClass
   properties:
   - type: OpenAPI
@@ -5132,7 +5197,8 @@ apis:
     The publicProtectionClassification API from American Financial Group — 1 operation(s) for publicprotectionclassification.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - publicProtectionClassification
   properties:
   - type: OpenAPI
@@ -5219,7 +5285,8 @@ apis:
   description: The put API from American Financial Group — 4 operation(s) for put.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - put
   properties:
   - type: OpenAPI
@@ -5307,6 +5374,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Quotes
+  tags_raw:
   - quote
   properties:
   - type: OpenAPI
@@ -5393,7 +5462,8 @@ apis:
   description: The read API from American Financial Group — 1 operation(s) for read.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - read
   properties:
   - type: OpenAPI
@@ -5481,7 +5551,8 @@ apis:
     The recommendAddress API from American Financial Group — 1 operation(s) for recommendaddress.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - recommendAddress
   properties:
   - type: OpenAPI
@@ -5656,7 +5727,8 @@ apis:
     The sanctionCompliance API from American Financial Group — 1 operation(s) for sanctioncompliance.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - sanctionCompliance
   properties:
   - type: OpenAPI
@@ -6272,6 +6344,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Scans
+  tags_raw:
   - scan
   properties:
   - type: OpenAPI
@@ -6359,6 +6433,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Search
+  tags_raw:
   - search
   properties:
   - type: OpenAPI
@@ -6446,7 +6522,8 @@ apis:
     The sewerBackupScore API from American Financial Group — 1 operation(s) for sewerbackupscore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - sewerBackupScore
   properties:
   - type: OpenAPI
@@ -6533,7 +6610,8 @@ apis:
   description: The sinkholeScore API from American Financial Group — 1 operation(s) for sinkholescore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - sinkholeScore
   properties:
   - type: OpenAPI
@@ -6621,6 +6699,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Submit
+  tags_raw:
   - submit
   properties:
   - type: OpenAPI
@@ -6708,6 +6788,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Synthetic
+  tags_raw:
   - synthetic
   properties:
   - type: OpenAPI
@@ -6794,7 +6876,8 @@ apis:
   description: The taxonomyCodes API from American Financial Group — 1 operation(s) for taxonomycodes.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - taxonomyCodes
   properties:
   - type: OpenAPI
@@ -7055,7 +7138,8 @@ apis:
   description: The update API from American Financial Group — 1 operation(s) for update.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - update
   properties:
   - type: OpenAPI
@@ -7143,6 +7227,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Verify
+  tags_raw:
   - verify
   properties:
   - type: OpenAPI
@@ -7316,7 +7402,8 @@ apis:
   description: The wildfireScore API from American Financial Group — 1 operation(s) for wildfirescore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - wildfireScore
   properties:
   - type: OpenAPI
@@ -7403,7 +7490,8 @@ apis:
   description: The windRiskScore API from American Financial Group — 1 operation(s) for windriskscore.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - windRiskScore
   properties:
   - type: OpenAPI
@@ -7490,7 +7578,8 @@ apis:
   description: The zipGuidelines API from American Financial Group — 1 operation(s) for zipguidelines.
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
-  tags:
+  tags: []
+  tags_raw:
   - zipGuidelines
   properties:
   - type: OpenAPI
@@ -7578,6 +7667,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - agency-codes
+  tags_raw:
   - agency codes
   properties:
   - type: OpenAPI
@@ -7927,6 +8018,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Media Types
+  tags_raw:
   - Media types
   properties:
   - type: OpenAPI
@@ -8189,6 +8282,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Property Valuation
+  tags_raw:
   - Property - Valuation
   properties:
   - type: OpenAPI
