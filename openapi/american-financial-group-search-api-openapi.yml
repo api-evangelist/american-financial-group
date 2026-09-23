@@ -1,0 +1,34 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Search API
+  version: 1.0.0
+  description: 'Operations tagged search across 3 of this provider''s published API definitions: american-financial-group-contract-openapi.json, american-financial-group-opportunity-openapi.json, american-financial-group-risk-assessment-openapi.json. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Search
+paths:
+  /api/search:
+    post:
+      tags:
+      - Search
+      responses:
+        '200':
+          description: OK
+      summary: Create api search
+      x-summary-source: derived
+      operationId: postApiSearch
+      x-operation-id-source: derived
+  /api/organization/search:
+    post:
+      tags:
+      - Search
+      responses:
+        '200':
+          description: OK
+      summary: Create api organization search
+      x-summary-source: derived
+      operationId: postApiOrganizationSearch
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-contract-openapi.json
+- american-financial-group-opportunity-openapi.json
+- american-financial-group-risk-assessment-openapi.json

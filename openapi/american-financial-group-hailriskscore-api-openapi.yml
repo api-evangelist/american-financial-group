@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Hail Risk Score…
+  version: 1.0.0
+tags:
+- name: hailRiskScore
+paths:
+  /api/hailRiskScore:
+    post:
+      tags:
+      - hailRiskScore
+      responses:
+        '200':
+          description: OK
+      summary: Create api hail risk score
+      x-summary-source: derived
+      operationId: postApiHailRiskScore
+      x-operation-id-source: derived

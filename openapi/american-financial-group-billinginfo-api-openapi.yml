@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Producer Billing Info API
+  version: 1.0.0
+tags:
+- name: billingInfo
+paths:
+  /api/billingInfo:
+    post:
+      tags:
+      - billingInfo
+      responses:
+        '200':
+          description: OK
+      summary: Create api billing info
+      x-summary-source: derived
+      operationId: postApiBillingInfo
+      x-operation-id-source: derived

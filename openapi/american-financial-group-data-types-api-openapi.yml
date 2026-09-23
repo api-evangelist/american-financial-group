@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Ingestion Data Types API
+  version: 0.187.0
+tags:
+- name: Data Types
+paths:
+  /api/dataTypes:
+    post:
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Data Types
+      summary: Create api data types
+      x-summary-source: derived
+      operationId: postApiDataTypes
+      x-operation-id-source: derived

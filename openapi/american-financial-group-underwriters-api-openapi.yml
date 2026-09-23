@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Submission Underwriters API
+  version: 1.0.0
+tags:
+- name: underwriters
+paths:
+  /api/underwriters:
+    post:
+      tags:
+      - underwriters
+      responses:
+        '200':
+          description: OK
+      summary: Create api underwriters
+      x-summary-source: derived
+      operationId: postApiUnderwriters
+      x-operation-id-source: derived

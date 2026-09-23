@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Recommend…
+  version: 1.0.0
+tags:
+- name: recommendAddress
+paths:
+  /api/location/recommendAddress:
+    post:
+      tags:
+      - recommendAddress
+      responses:
+        '200':
+          description: OK
+      summary: Create api location recommend address
+      x-summary-source: derived
+      operationId: postApiLocationRecommendAddress
+      x-operation-id-source: derived

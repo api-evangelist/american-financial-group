@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Document Scan API
+  version: 1.0.0
+tags:
+- name: Scan
+paths:
+  /api/scan:
+    post:
+      tags:
+      - Scan
+      responses:
+        '200':
+          description: OK
+      summary: Create api scan
+      x-summary-source: derived
+      operationId: postApiScan
+      x-operation-id-source: derived

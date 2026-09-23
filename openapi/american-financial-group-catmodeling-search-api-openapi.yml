@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Cat…
+  version: 1.0.0
+tags:
+- name: catModeling/search
+paths:
+  /api/catModeling/search:
+    post:
+      tags:
+      - catModeling/search
+      responses:
+        '200':
+          description: OK
+      summary: Create api cat modeling search
+      x-summary-source: derived
+      operationId: postApiCatModelingSearch
+      x-operation-id-source: derived

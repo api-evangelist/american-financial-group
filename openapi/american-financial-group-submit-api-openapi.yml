@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Contract Submit API
+  version: 1.0.0
+tags:
+- name: Submit
+paths:
+  /api/submit:
+    post:
+      tags:
+      - Submit
+      responses:
+        '200':
+          description: OK
+      summary: Create api submit
+      x-summary-source: derived
+      operationId: postApiSubmit
+      x-operation-id-source: derived

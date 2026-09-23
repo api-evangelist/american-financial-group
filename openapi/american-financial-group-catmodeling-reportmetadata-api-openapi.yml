@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Cat…
+  version: 1.0.0
+tags:
+- name: catModeling/reportMetadata
+paths:
+  /api/catModeling/reportMetadata:
+    post:
+      tags:
+      - catModeling/reportMetadata
+      responses:
+        '200':
+          description: OK
+      summary: Create api cat modeling report metadata
+      x-summary-source: derived
+      operationId: postApiCatModelingReportMetadata
+      x-operation-id-source: derived

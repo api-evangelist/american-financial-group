@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment /business/search…
+  version: 1.0.0
+tags:
+- name: Business Search
+paths:
+  /api/location/business/search:
+    post:
+      tags:
+      - Business Search
+      responses:
+        '200':
+          description: OK
+      summary: Create api location business search
+      x-summary-source: derived
+      operationId: postApiLocationBusinessSearch
+      x-operation-id-source: derived

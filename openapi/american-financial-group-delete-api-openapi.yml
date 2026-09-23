@@ -1,0 +1,44 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Delete API
+  version: 1.0.0
+  description: 'Operations tagged delete across 2 of this provider''s published API definitions: american-financial-group-document-openapi.json, american-financial-group-opportunity-openapi.json. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Delete
+paths:
+  /api/*/documents/*/checkout:
+    delete:
+      tags:
+      - Delete
+      responses:
+        '200':
+          description: OK
+      summary: Delete api * documents * checkout
+      x-summary-source: derived
+      operationId: deleteApi*Documents*Checkout
+      x-operation-id-source: derived
+  /api/*/documents/*/comment/*:
+    delete:
+      tags:
+      - Delete
+      responses:
+        '200':
+          description: OK
+      summary: Delete api * documents * comment *
+      x-summary-source: derived
+      operationId: deleteApi*Documents*Comment*
+      x-operation-id-source: derived
+  /api/delete:
+    post:
+      tags:
+      - Delete
+      responses:
+        '200':
+          description: OK
+      summary: Create api delete
+      x-summary-source: derived
+      operationId: postApiDelete
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-document-openapi.json
+- american-financial-group-opportunity-openapi.json

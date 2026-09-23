@@ -1,7 +1,9 @@
 ---
 title: AFG 2026 proxy details votes and strong results
 url: https://www.stocktitan.net/sec-filings/AFG/def-14a-american-financial-group-inc-definitive-proxy-statement-5ab2be94a05b.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American Financial Group" press release artificial intelligence'
 position: 4
 source: serpapi-google

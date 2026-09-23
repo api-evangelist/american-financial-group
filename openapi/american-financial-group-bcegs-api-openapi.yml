@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment BCEGS API
+  version: 1.0.0
+tags:
+- name: BCEGS
+paths:
+  /api/location/BCEGS:
+    post:
+      tags:
+      - BCEGS
+      responses:
+        '200':
+          description: OK
+      summary: Create api location bcegs
+      x-summary-source: derived
+      operationId: postApiLocationBCEGS
+      x-operation-id-source: derived

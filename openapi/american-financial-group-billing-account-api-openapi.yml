@@ -1,0 +1,40 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance Policy Billing Account API
+  version: 1.0.0
+tags:
+- name: Billing Account
+paths:
+  /api/createNewBillingAccount:
+    post:
+      tags:
+      - Billing Account
+      responses:
+        '200':
+          description: OK
+      summary: Create api create new billing account
+      x-summary-source: derived
+      operationId: postApiCreateNewBillingAccount
+      x-operation-id-source: derived
+  /api/updateBillingAccount:
+    post:
+      tags:
+      - Billing Account
+      responses:
+        '200':
+          description: OK
+      summary: Create api update billing account
+      x-summary-source: derived
+      operationId: postApiUpdateBillingAccount
+      x-operation-id-source: derived
+  /api/getPaymentPlans:
+    post:
+      tags:
+      - Billing Account
+      responses:
+        '200':
+          description: OK
+      summary: Create api get payment plans
+      x-summary-source: derived
+      operationId: postApiGetPaymentPlans
+      x-operation-id-source: derived

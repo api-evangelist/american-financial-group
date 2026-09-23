@@ -1,7 +1,9 @@
 ---
 title: American Financial Group, Inc. Announces Purchase of ...
 url: https://www.afginc.com/news-releases/news-release-details/american-financial-group-inc-announces-purchase-verikai-inc
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American Financial Group" press release artificial intelligence'
 position: 1
 source: serpapi-google

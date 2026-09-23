@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance Producer API
+  version: 1.0.0
+tags:
+- name: Producer
+paths:
+  /api/producer:
+    post:
+      tags:
+      - Producer
+      responses:
+        '200':
+          description: OK
+      summary: Create api producer
+      x-summary-source: derived
+      operationId: postApiProducer
+      x-operation-id-source: derived

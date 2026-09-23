@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Property…
+  version: 1.0.0
+tags:
+- name: propertyValuation/search
+paths:
+  /api/propertyValuation/search:
+    post:
+      tags:
+      - propertyValuation/search
+      responses:
+        '200':
+          description: OK
+      summary: Create api property valuation search
+      x-summary-source: derived
+      operationId: postApiPropertyValuationSearch
+      x-operation-id-source: derived

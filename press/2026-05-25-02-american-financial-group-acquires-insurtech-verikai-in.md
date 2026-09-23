@@ -1,7 +1,9 @@
 ---
 title: American Financial Group Acquires InsurTech Verikai in ...
 url: https://www.carriermanagement.com/news/2022/01/20/231630.htm
-date: '2026-05-25'
+published: '2022-01-20'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"American Financial Group" press release artificial intelligence'
 position: 2
 source: serpapi-google

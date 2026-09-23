@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Notification Notes API
+  version: 1.0.0
+tags:
+- name: Notes
+paths:
+  /api/claims/notes:
+    post:
+      tags:
+      - Notes
+      responses:
+        '200':
+          description: OK
+      summary: Create api claims notes
+      x-summary-source: derived
+      operationId: postApiClaimsNotes
+      x-operation-id-source: derived

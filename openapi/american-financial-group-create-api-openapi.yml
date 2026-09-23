@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Opportunity Create API
+  version: 1.0.0
+tags:
+- name: Create
+paths:
+  /api/create:
+    post:
+      tags:
+      - Create
+      responses:
+        '200':
+          description: OK
+      summary: Create api create
+      x-summary-source: derived
+      operationId: postApiCreate
+      x-operation-id-source: derived

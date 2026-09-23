@@ -1,0 +1,51 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance Policy Ivr API
+  version: 1.0.0
+tags:
+- name: IVR
+paths:
+  /api/getAccountDetails:
+    post:
+      tags:
+      - IVR
+      responses:
+        '200':
+          description: OK
+      summary: Create api get account details
+      x-summary-source: derived
+      operationId: postApiGetAccountDetails
+      x-operation-id-source: derived
+  /api/getAuthenticatedAccountDetails:
+    post:
+      tags:
+      - IVR
+      responses:
+        '200':
+          description: OK
+      summary: Create api get authenticated account details
+      x-summary-source: derived
+      operationId: postApiGetAuthenticatedAccountDetails
+      x-operation-id-source: derived
+  /api/getAuthenticatedAccountDetailsV2:
+    post:
+      tags:
+      - IVR
+      responses:
+        '200':
+          description: OK
+      summary: Create api get authenticated account details v2
+      x-summary-source: derived
+      operationId: postApiGetAuthenticatedAccountDetailsV2
+      x-operation-id-source: derived
+  /api/getPoliciesForAccount:
+    post:
+      tags:
+      - IVR
+      responses:
+        '200':
+          description: OK
+      summary: Create api get policies for account
+      x-summary-source: derived
+      operationId: postApiGetPoliciesForAccount
+      x-operation-id-source: derived

@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Location Report…
+  version: 1.0.0
+tags:
+- name: locationReport
+paths:
+  /api/locationReport:
+    post:
+      tags:
+      - locationReport
+      responses:
+        '200':
+          description: OK
+      summary: Create api location report
+      x-summary-source: derived
+      operationId: postApiLocationReport
+      x-operation-id-source: derived

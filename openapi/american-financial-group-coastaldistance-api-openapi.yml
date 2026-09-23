@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Coastal Distance…
+  version: 1.0.0
+tags:
+- name: coastalDistance
+paths:
+  /api/coastalDistance:
+    post:
+      tags:
+      - coastalDistance
+      responses:
+        '200':
+          description: OK
+      summary: Create api coastal distance
+      x-summary-source: derived
+      operationId: postApiCoastalDistance
+      x-operation-id-source: derived

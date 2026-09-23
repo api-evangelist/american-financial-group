@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Wind Risk Score…
+  version: 1.0.0
+tags:
+- name: windRiskScore
+paths:
+  /api/windRiskScore:
+    post:
+      tags:
+      - windRiskScore
+      responses:
+        '200':
+          description: OK
+      summary: Create api wind risk score
+      x-summary-source: derived
+      operationId: postApiWindRiskScore
+      x-operation-id-source: derived

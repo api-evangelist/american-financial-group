@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Protection Class…
+  version: 1.0.0
+tags:
+- name: protectionClass
+paths:
+  /api/protectionClass:
+    post:
+      tags:
+      - protectionClass
+      responses:
+        '200':
+          description: OK
+      summary: Create api protection class
+      x-summary-source: derived
+      operationId: postApiProtectionClass
+      x-operation-id-source: derived

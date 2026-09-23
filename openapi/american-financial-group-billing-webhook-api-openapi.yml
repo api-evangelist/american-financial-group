@@ -1,0 +1,51 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance Policy Billing Webhook API
+  version: 1.0.0
+tags:
+- name: billing-webhook
+paths:
+  /oneinc/notifications/acknowledgePayments:
+    post:
+      tags:
+      - billing-webhook
+      responses:
+        '200':
+          description: OK
+      summary: Create oneinc notifications acknowledge payments
+      x-summary-source: derived
+      operationId: postOneincNotificationsAcknowledgePayments
+      x-operation-id-source: derived
+  /oneinc/notifications/acknowledgeScheduledPayments:
+    post:
+      tags:
+      - billing-webhook
+      responses:
+        '200':
+          description: OK
+      summary: Create oneinc notifications acknowledge scheduled payments
+      x-summary-source: derived
+      operationId: postOneincNotificationsAcknowledgeScheduledPayments
+      x-operation-id-source: derived
+  /oneinc/notifications/acknowledgePaymentMethods:
+    post:
+      tags:
+      - billing-webhook
+      responses:
+        '200':
+          description: OK
+      summary: Create oneinc notifications acknowledge payment methods
+      x-summary-source: derived
+      operationId: postOneincNotificationsAcknowledgePaymentMethods
+      x-operation-id-source: derived
+  /oneinc/notifications/acknowledgeAutopayDetails:
+    post:
+      tags:
+      - billing-webhook
+      responses:
+        '200':
+          description: OK
+      summary: Create oneinc notifications acknowledge autopay details
+      x-summary-source: derived
+      operationId: postOneincNotificationsAcknowledgeAutopayDetails
+      x-operation-id-source: derived

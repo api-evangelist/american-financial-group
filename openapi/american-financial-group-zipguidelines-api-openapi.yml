@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Zip Guidelines…
+  version: 1.0.0
+tags:
+- name: zipGuidelines
+paths:
+  /api/zipGuidelines:
+    post:
+      tags:
+      - zipGuidelines
+      responses:
+        '200':
+          description: OK
+      summary: Create api zip guidelines
+      x-summary-source: derived
+      operationId: postApiZipGuidelines
+      x-operation-id-source: derived

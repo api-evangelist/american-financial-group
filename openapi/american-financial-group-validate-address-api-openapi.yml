@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Validate Address…
+  version: 1.0.0
+tags:
+- name: Validate Address
+paths:
+  /api/location/validateAddress:
+    post:
+      tags:
+      - Validate Address
+      responses:
+        '200':
+          description: OK
+      summary: Create api location validate address
+      x-summary-source: derived
+      operationId: postApiLocationValidateAddress
+      x-operation-id-source: derived

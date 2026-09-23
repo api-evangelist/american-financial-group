@@ -1,0 +1,77 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Patch API
+  version: 1.0.0
+  description: 'Operations tagged patch across 2 of this provider''s published API definitions: american-financial-group-claims-openapi.json, american-financial-group-document-openapi.json. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Patch
+paths:
+  /api/fnol/update:
+    patch:
+      tags:
+      - Patch
+      responses:
+        '200':
+          description: OK
+      summary: Update api fnol update
+      x-summary-source: derived
+      operationId: patchApiFnolUpdate
+      x-operation-id-source: derived
+  /api/*/documents/*:
+    patch:
+      tags:
+      - Patch
+      responses:
+        '200':
+          description: OK
+      summary: Update api * documents *
+      x-summary-source: derived
+      operationId: patchApi*Documents*
+      x-operation-id-source: derived
+  /api/*/documents:
+    patch:
+      tags:
+      - Patch
+      responses:
+        '200':
+          description: OK
+      summary: Update api * documents
+      x-summary-source: derived
+      operationId: patchApi*Documents
+      x-operation-id-source: derived
+  /api/*/cases/*:
+    patch:
+      tags:
+      - Patch
+      responses:
+        '200':
+          description: OK
+      summary: Update api * cases *
+      x-summary-source: derived
+      operationId: patchApi*Cases*
+      x-operation-id-source: derived
+  /api/documents/*/*:
+    patch:
+      tags:
+      - Patch
+      responses:
+        '200':
+          description: OK
+      summary: Update api documents * *
+      x-summary-source: derived
+      operationId: patchApiDocuments**
+      x-operation-id-source: derived
+  /api/policy/files/*:
+    patch:
+      tags:
+      - Patch
+      responses:
+        '200':
+          description: OK
+      summary: Update api policy files *
+      x-summary-source: derived
+      operationId: patchApiPolicyFiles*
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-claims-openapi.json
+- american-financial-group-document-openapi.json

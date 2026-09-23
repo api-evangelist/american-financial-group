@@ -1,0 +1,617 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Get API
+  version: 1.0.0
+  description: 'Operations tagged get across 7 of this provider''s published API definitions: american-financial-group-claims-openapi.json, american-financial-group-document-openapi.json, american-financial-group-forms-openapi.json, american-financial-group-issuance-openapi.json, american-financial-group-letters-openapi.json, american-financial-group-shop-openapi.json, american-financial-group-submission-openapi.json. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Get
+paths:
+  /api/fnol/submission:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api fnol submission
+      x-summary-source: derived
+      operationId: getApiFnolSubmission
+      x-operation-id-source: derived
+  /api/*/documents/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents *
+      x-summary-source: derived
+      operationId: getApi*Documents*
+      x-operation-id-source: derived
+  /api/*/documents:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents
+      x-summary-source: derived
+      operationId: getApi*Documents
+      x-operation-id-source: derived
+  /api/*/documents/*/contents:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * contents
+      x-summary-source: derived
+      operationId: getApi*Documents*Contents
+      x-operation-id-source: derived
+  /api/*/documents/*/contents/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * contents *
+      x-summary-source: derived
+      operationId: getApi*Documents*Contents*
+      x-operation-id-source: derived
+  /api/*/documents/*/thumbnail:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * thumbnail
+      x-summary-source: derived
+      operationId: getApi*Documents*Thumbnail
+      x-operation-id-source: derived
+  /api/*/documents/*/thumbnail/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * thumbnail *
+      x-summary-source: derived
+      operationId: getApi*Documents*Thumbnail*
+      x-operation-id-source: derived
+  /api/*/documents/*/thumbnails:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * thumbnails
+      x-summary-source: derived
+      operationId: getApi*Documents*Thumbnails
+      x-operation-id-source: derived
+  /api/*/documents/*/versions:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * versions
+      x-summary-source: derived
+      operationId: getApi*Documents*Versions
+      x-operation-id-source: derived
+  /api/*/documents/*/versions/latest:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * versions latest
+      x-summary-source: derived
+      operationId: getApi*Documents*VersionsLatest
+      x-operation-id-source: derived
+  /api/*/documents/series/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents series *
+      x-summary-source: derived
+      operationId: getApi*DocumentsSeries*
+      x-operation-id-source: derived
+  /api/*/documents/series/*/latest:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents series * latest
+      x-summary-source: derived
+      operationId: getApi*DocumentsSeries*Latest
+      x-operation-id-source: derived
+  /api/*/documents/*/checkout:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * checkout
+      x-summary-source: derived
+      operationId: getApi*Documents*Checkout
+      x-operation-id-source: derived
+  /api/*/search/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * search *
+      x-summary-source: derived
+      operationId: getApi*Search*
+      x-operation-id-source: derived
+  /api/*/search/*/distinct:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * search * distinct
+      x-summary-source: derived
+      operationId: getApi*Search*Distinct
+      x-operation-id-source: derived
+  /api/*/search/*/distinct/set:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * search * distinct set
+      x-summary-source: derived
+      operationId: getApi*Search*DistinctSet
+      x-operation-id-source: derived
+  /api/*/documents/*/annotations:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * annotations
+      x-summary-source: derived
+      operationId: getApi*Documents*Annotations
+      x-operation-id-source: derived
+  /api/*/documents/*/annotations/contents:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * annotations contents
+      x-summary-source: derived
+      operationId: getApi*Documents*AnnotationsContents
+      x-operation-id-source: derived
+  /api/*/documents/*/comment/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * comment *
+      x-summary-source: derived
+      operationId: getApi*Documents*Comment*
+      x-operation-id-source: derived
+  /api/*/documents/*/comments:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * comments
+      x-summary-source: derived
+      operationId: getApi*Documents*Comments
+      x-operation-id-source: derived
+  /api/*/documents/*/new:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * documents * new
+      x-summary-source: derived
+      operationId: getApi*Documents*New
+      x-operation-id-source: derived
+  /api/*/annotations/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * annotations *
+      x-summary-source: derived
+      operationId: getApi*Annotations*
+      x-operation-id-source: derived
+  /api/*/annotations/*/contents:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * annotations * contents
+      x-summary-source: derived
+      operationId: getApi*Annotations*Contents
+      x-operation-id-source: derived
+  /api/*/cases/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * cases *
+      x-summary-source: derived
+      operationId: getApi*Cases*
+      x-operation-id-source: derived
+  /api/*/cases/*/documents:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * cases * documents
+      x-summary-source: derived
+      operationId: getApi*Cases*Documents
+      x-operation-id-source: derived
+  /api/documents/*/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api documents * *
+      x-summary-source: derived
+      operationId: getApiDocuments**
+      x-operation-id-source: derived
+  /api/documents/*/*/contents:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api documents * * contents
+      x-summary-source: derived
+      operationId: getApiDocuments**Contents
+      x-operation-id-source: derived
+  /api/documents/*/*/contents/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api documents * * contents *
+      x-summary-source: derived
+      operationId: getApiDocuments**Contents*
+      x-operation-id-source: derived
+  /api/policy/files/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy files *
+      x-summary-source: derived
+      operationId: getApiPolicyFiles*
+      x-operation-id-source: derived
+  /api/policy/files/search/*/*/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy files search * * *
+      x-summary-source: derived
+      operationId: getApiPolicyFilesSearch***
+      x-operation-id-source: derived
+  /api/policy/files/search/*/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy files search * *
+      x-summary-source: derived
+      operationId: getApiPolicyFilesSearch**
+      x-operation-id-source: derived
+  /api/policy/files/search/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy files search *
+      x-summary-source: derived
+      operationId: getApiPolicyFilesSearch*
+      x-operation-id-source: derived
+  /api/policy/files/*/folders:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy files * folders
+      x-summary-source: derived
+      operationId: getApiPolicyFiles*Folders
+      x-operation-id-source: derived
+  /api/policy/files/*/marks:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy files * marks
+      x-summary-source: derived
+      operationId: getApiPolicyFiles*Marks
+      x-operation-id-source: derived
+  /api/policy/folders/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy folders *
+      x-summary-source: derived
+      operationId: getApiPolicyFolders*
+      x-operation-id-source: derived
+  /api/policy/documents/*/contents/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy documents * contents *
+      x-summary-source: derived
+      operationId: getApiPolicyDocuments*Contents*
+      x-operation-id-source: derived
+  /api/policy/documents/*/*/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy documents * * *
+      x-summary-source: derived
+      operationId: getApiPolicyDocuments***
+      x-operation-id-source: derived
+  /api/policy/documents/*/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy documents * *
+      x-summary-source: derived
+      operationId: getApiPolicyDocuments**
+      x-operation-id-source: derived
+  /api/policy/documents/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy documents *
+      x-summary-source: derived
+      operationId: getApiPolicyDocuments*
+      x-operation-id-source: derived
+  /api/policy/tasks/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy tasks *
+      x-summary-source: derived
+      operationId: getApiPolicyTasks*
+      x-operation-id-source: derived
+  /api/underwriting/documents/search/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api underwriting documents search *
+      x-summary-source: derived
+      operationId: getApiUnderwritingDocumentsSearch*
+      x-operation-id-source: derived
+  /api/underwriting/documents/search/*/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api underwriting documents search * *
+      x-summary-source: derived
+      operationId: getApiUnderwritingDocumentsSearch**
+      x-operation-id-source: derived
+  /api/*/trade-record/search:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * trade record search
+      x-summary-source: derived
+      operationId: getApi*TradeRecordSearch
+      x-operation-id-source: derived
+  /api/*/trade-record/search/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * trade record search *
+      x-summary-source: derived
+      operationId: getApi*TradeRecordSearch*
+      x-operation-id-source: derived
+  /api/*/properties/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api * properties *
+      x-summary-source: derived
+      operationId: getApi*Properties*
+      x-operation-id-source: derived
+  /api/search:
+    get:
+      tags:
+      - Get
+      operationId: /api/search
+      responses:
+        '200':
+          description: OK
+      summary: /api/search
+      x-summary-source: derived
+  /api/datatypes:
+    get:
+      tags:
+      - Get
+      operationId: /api/datatypes
+      responses:
+        '200':
+          description: OK
+      summary: /api/datatypes
+      x-summary-source: derived
+  /api/globalFields:
+    get:
+      tags:
+      - Get
+      operationId: /api/globalFields
+      responses:
+        '200':
+          description: OK
+      summary: /api/global fields
+      x-summary-source: derived
+  /api/searchVersion:
+    get:
+      tags:
+      - Get
+      operationId: /api/searchVersion
+      responses:
+        '200':
+          description: OK
+      summary: /api/search version
+      x-summary-source: derived
+  /api/customerNumber:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api customer number
+      x-summary-source: derived
+      operationId: getApiCustomerNumber
+      x-operation-id-source: derived
+  /api/policyNumber:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api policy number
+      x-summary-source: derived
+      operationId: getApiPolicyNumber
+      x-operation-id-source: derived
+  /api/validate/*/quotes/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api validate * quotes *
+      x-summary-source: derived
+      operationId: getApiValidate*Quotes*
+      x-operation-id-source: derived
+  /api/report/*:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api report *
+      x-summary-source: derived
+      operationId: getApiReport*
+      x-operation-id-source: derived
+  /api/mediaTypes:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api media types
+      x-summary-source: derived
+      operationId: getApiMediaTypes
+      x-operation-id-source: derived
+  /api/products:
+    get:
+      tags:
+      - Get
+      responses:
+        '200':
+          description: OK
+      summary: Get api products
+      x-summary-source: derived
+      operationId: getApiProducts
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-claims-openapi.json
+- american-financial-group-document-openapi.json
+- american-financial-group-forms-openapi.json
+- american-financial-group-issuance-openapi.json
+- american-financial-group-letters-openapi.json
+- american-financial-group-shop-openapi.json
+- american-financial-group-submission-openapi.json

@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Document Application API
+  version: 1.0.0
+tags:
+- name: Application
+paths:
+  /api/application:
+    post:
+      tags:
+      - Application
+      responses:
+        '200':
+          description: OK
+      summary: Create api application
+      x-summary-source: derived
+      operationId: postApiApplication
+      x-operation-id-source: derived

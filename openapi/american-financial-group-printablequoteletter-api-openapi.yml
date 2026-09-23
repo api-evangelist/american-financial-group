@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Letters Printable Quote Letter…
+  version: 1.0.0
+tags:
+- name: printableQuoteLetter
+paths:
+  /api/printableQuoteLetter:
+    post:
+      tags:
+      - printableQuoteLetter
+      responses:
+        '200':
+          description: OK
+      summary: Create api printable quote letter
+      x-summary-source: derived
+      operationId: postApiPrintableQuoteLetter
+      x-operation-id-source: derived

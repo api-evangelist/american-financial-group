@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Ingestion Ingest Multipart API
+  version: 0.187.0
+tags:
+- name: IngestMultipart
+paths:
+  /api/ingestMultipart:
+    post:
+      responses:
+        '200':
+          description: OK
+      tags:
+      - IngestMultipart
+      summary: Create api ingest multipart
+      x-summary-source: derived
+      operationId: postApiIngestMultipart
+      x-operation-id-source: derived

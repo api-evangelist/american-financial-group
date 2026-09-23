@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Sanction…
+  version: 1.0.0
+tags:
+- name: sanctionCompliance/batch/delete
+paths:
+  /api/sanctionCompliance/batch/delete:
+    post:
+      tags:
+      - sanctionCompliance/batch/delete
+      responses:
+        '200':
+          description: OK
+      summary: Create api sanction compliance batch delete
+      x-summary-source: derived
+      operationId: postApiSanctionComplianceBatchDelete
+      x-operation-id-source: derived

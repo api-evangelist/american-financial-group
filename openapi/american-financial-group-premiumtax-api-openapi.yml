@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Premium Tax API
+  version: 1.0.0
+tags:
+- name: premiumTax
+paths:
+  /api/location/premiumTax:
+    post:
+      tags:
+      - premiumTax
+      responses:
+        '200':
+          description: OK
+      summary: Create api location premium tax
+      x-summary-source: derived
+      operationId: postApiLocationPremiumTax
+      x-operation-id-source: derived

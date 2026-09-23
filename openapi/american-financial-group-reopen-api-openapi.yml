@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Notification Re Open API
+  version: 1.0.0
+tags:
+- name: reOpen
+paths:
+  /api/claims/reOpen:
+    post:
+      tags:
+      - reOpen
+      responses:
+        '200':
+          description: OK
+      summary: Create api claims re open
+      x-summary-source: derived
+      operationId: postApiClaimsReOpen
+      x-operation-id-source: derived

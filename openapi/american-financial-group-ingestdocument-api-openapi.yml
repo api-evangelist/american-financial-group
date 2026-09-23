@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Ingestion Ingest Document API
+  version: 0.187.0
+tags:
+- name: IngestDocument
+paths:
+  /api/ingestDocument:
+    post:
+      responses:
+        '200':
+          description: OK
+      tags:
+      - IngestDocument
+      summary: Create api ingest document
+      x-summary-source: derived
+      operationId: postApiIngestDocument
+      x-operation-id-source: derived

@@ -1,0 +1,37 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Docs API
+  version: 1.0.0
+  description: 'Operations tagged docs across 17 of this provider''s published API definitions: american-financial-group-billing-openapi.json, american-financial-group-claims-openapi.json, american-financial-group-contract-openapi.json, american-financial-group-document-openapi.json, american-financial-group-forms-openapi.json, american-financial-group-issuance-openapi.json, american-financial-group-letters-openapi.json, american-financial-group-notification-openapi.json…'
+tags:
+- name: Docs
+paths:
+  /api/docs:
+    post:
+      tags:
+      - Docs
+      responses:
+        '200':
+          description: OK
+      summary: Create api docs
+      x-summary-source: derived
+      operationId: postApiDocs
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-billing-openapi.json
+- american-financial-group-claims-openapi.json
+- american-financial-group-contract-openapi.json
+- american-financial-group-document-openapi.json
+- american-financial-group-forms-openapi.json
+- american-financial-group-issuance-openapi.json
+- american-financial-group-letters-openapi.json
+- american-financial-group-notification-openapi.json
+- american-financial-group-opportunity-openapi.json
+- american-financial-group-policy-openapi.json
+- american-financial-group-producer-openapi.json
+- american-financial-group-product-openapi.json
+- american-financial-group-rating-openapi.json
+- american-financial-group-risk-assessment-openapi.json
+- american-financial-group-risk-selection-openapi.json
+- american-financial-group-shop-openapi.json
+- american-financial-group-submission-openapi.json

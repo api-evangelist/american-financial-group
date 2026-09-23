@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Producer Hierarchy API
+  version: 1.0.0
+tags:
+- name: Hierarchy
+paths:
+  /api/hierarchy:
+    post:
+      tags:
+      - Hierarchy
+      responses:
+        '200':
+          description: OK
+      summary: Create api hierarchy
+      x-summary-source: derived
+      operationId: postApiHierarchy
+      x-operation-id-source: derived

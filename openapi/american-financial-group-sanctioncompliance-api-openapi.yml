@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Sanction…
+  version: 1.0.0
+tags:
+- name: sanctionCompliance
+paths:
+  /api/sanctionCompliance:
+    post:
+      tags:
+      - sanctionCompliance
+      responses:
+        '200':
+          description: OK
+      summary: Create api sanction compliance
+      x-summary-source: derived
+      operationId: postApiSanctionCompliance
+      x-operation-id-source: derived

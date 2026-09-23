@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Notification Messages API
+  version: 1.0.0
+tags:
+- name: Messages
+paths:
+  /api/claims/messages:
+    post:
+      tags:
+      - Messages
+      responses:
+        '200':
+          description: OK
+      summary: Create api claims messages
+      x-summary-source: derived
+      operationId: postApiClaimsMessages
+      x-operation-id-source: derived

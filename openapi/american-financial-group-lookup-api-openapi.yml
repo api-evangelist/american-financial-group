@@ -1,0 +1,40 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Lookup API
+  version: 1.0.0
+tags:
+- name: Lookup
+paths:
+  /api/aircraft/lookup:
+    post:
+      tags:
+      - Lookup
+      responses:
+        '200':
+          description: OK
+      summary: Create api aircraft lookup
+      x-summary-source: derived
+      operationId: postApiAircraftLookup
+      x-operation-id-source: derived
+  /api/location/lookup:
+    post:
+      tags:
+      - Lookup
+      responses:
+        '200':
+          description: OK
+      summary: Create api location lookup
+      x-summary-source: derived
+      operationId: postApiLocationLookup
+      x-operation-id-source: derived
+  /api/vin/lookup:
+    post:
+      tags:
+      - Lookup
+      responses:
+        '200':
+          description: OK
+      summary: Create api vin lookup
+      x-summary-source: derived
+      operationId: postApiVinLookup
+      x-operation-id-source: derived

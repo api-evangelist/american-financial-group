@@ -1,0 +1,1277 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Post API
+  version: 1.0.0
+  description: 'Operations tagged post across 13 of this provider''s published API definitions: american-financial-group-billing-openapi.json, american-financial-group-claims-openapi.json, american-financial-group-document-openapi.json, american-financial-group-forms-openapi.json, american-financial-group-issuance-openapi.json, american-financial-group-letters-openapi.json, american-financial-group-notification-openapi.json, american-financial-group-policy-openapi.json…'
+tags:
+- name: Post
+paths:
+  /api/billCharges:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api bill charges
+      x-summary-source: derived
+      operationId: postApiBillCharges
+      x-operation-id-source: derived
+  /api/reportPayment:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api report payment
+      x-summary-source: derived
+      operationId: postApiReportPayment
+      x-operation-id-source: derived
+  /api/riskReport:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api risk report
+      x-summary-source: derived
+      operationId: postApiRiskReport
+      x-operation-id-source: derived
+  /api/serviceProvider/address/create:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api service provider address create
+      x-summary-source: derived
+      operationId: postApiServiceProviderAddressCreate
+      x-operation-id-source: derived
+  /api/serviceProvider/address/search:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api service provider address search
+      x-summary-source: derived
+      operationId: postApiServiceProviderAddressSearch
+      x-operation-id-source: derived
+  /api/serviceProvider/address/update:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api service provider address update
+      x-summary-source: derived
+      operationId: postApiServiceProviderAddressUpdate
+      x-operation-id-source: derived
+  /api/serviceProvider/create:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api service provider create
+      x-summary-source: derived
+      operationId: postApiServiceProviderCreate
+      x-operation-id-source: derived
+  /api/serviceProvider/search:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api service provider search
+      x-summary-source: derived
+      operationId: postApiServiceProviderSearch
+      x-operation-id-source: derived
+  /api/serviceProvider/update:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api service provider update
+      x-summary-source: derived
+      operationId: postApiServiceProviderUpdate
+      x-operation-id-source: derived
+  /api/fnol/create:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api fnol create
+      x-summary-source: derived
+      operationId: postApiFnolCreate
+      x-operation-id-source: derived
+  /api/paymentFeedback:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api payment feedback
+      x-summary-source: derived
+      operationId: postApiPaymentFeedback
+      x-operation-id-source: derived
+  /api/scan/result:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api scan result
+      x-summary-source: derived
+      operationId: postApiScanResult
+      x-operation-id-source: derived
+  /api/*/documents/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * documents *
+      x-summary-source: derived
+      operationId: postApi*Documents*
+      x-operation-id-source: derived
+  /api/*/documents/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * documents * *
+      x-summary-source: derived
+      operationId: postApi*Documents**
+      x-operation-id-source: derived
+  /api/*/documents:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * documents
+      x-summary-source: derived
+      operationId: postApi*Documents
+      x-operation-id-source: derived
+  /api/*/documents/*/checkin:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * documents * checkin
+      x-summary-source: derived
+      operationId: postApi*Documents*Checkin
+      x-operation-id-source: derived
+  /api/*/search/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * search *
+      x-summary-source: derived
+      operationId: postApi*Search*
+      x-operation-id-source: derived
+  /api/*/search/*/distinct:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * search * distinct
+      x-summary-source: derived
+      operationId: postApi*Search*Distinct
+      x-operation-id-source: derived
+  /api/*/search/*/distinct/set:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * search * distinct set
+      x-summary-source: derived
+      operationId: postApi*Search*DistinctSet
+      x-operation-id-source: derived
+  /api/*/documents/*/comment:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * documents * comment
+      x-summary-source: derived
+      operationId: postApi*Documents*Comment
+      x-operation-id-source: derived
+  /api/*/cases/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases * *
+      x-summary-source: derived
+      operationId: postApi*Cases**
+      x-operation-id-source: derived
+  /api/*/cases/search:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases search
+      x-summary-source: derived
+      operationId: postApi*CasesSearch
+      x-operation-id-source: derived
+  /api/*/cases/search/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases search *
+      x-summary-source: derived
+      operationId: postApi*CasesSearch*
+      x-operation-id-source: derived
+  /api/*/cases/search/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases search * *
+      x-summary-source: derived
+      operationId: postApi*CasesSearch**
+      x-operation-id-source: derived
+  /api/*/cases/search/distinct:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases search distinct
+      x-summary-source: derived
+      operationId: postApi*CasesSearchDistinct
+      x-operation-id-source: derived
+  /api/*/cases/search/*/distinct:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases search * distinct
+      x-summary-source: derived
+      operationId: postApi*CasesSearch*Distinct
+      x-operation-id-source: derived
+  /api/*/cases/search/*/*/distinct:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases search * * distinct
+      x-summary-source: derived
+      operationId: postApi*CasesSearch**Distinct
+      x-operation-id-source: derived
+  /api/*/cases/*/documents/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * cases * documents *
+      x-summary-source: derived
+      operationId: postApi*Cases*Documents*
+      x-operation-id-source: derived
+  /api/documents/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api documents * *
+      x-summary-source: derived
+      operationId: postApiDocuments**
+      x-operation-id-source: derived
+  /api/policy/files/*/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy files * * *
+      x-summary-source: derived
+      operationId: postApiPolicyFiles***
+      x-operation-id-source: derived
+  /api/policy/files/search/*/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy files search * * *
+      x-summary-source: derived
+      operationId: postApiPolicyFilesSearch***
+      x-operation-id-source: derived
+  /api/policy/files/search/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy files search * *
+      x-summary-source: derived
+      operationId: postApiPolicyFilesSearch**
+      x-operation-id-source: derived
+  /api/policy/files/search/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy files search *
+      x-summary-source: derived
+      operationId: postApiPolicyFilesSearch*
+      x-operation-id-source: derived
+  /api/policy/files/*/marks/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy files * marks *
+      x-summary-source: derived
+      operationId: postApiPolicyFiles*Marks*
+      x-operation-id-source: derived
+  /api/policy/folders/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy folders * *
+      x-summary-source: derived
+      operationId: postApiPolicyFolders**
+      x-operation-id-source: derived
+  /api/policy/documents/*/*/*/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy documents * * * * *
+      x-summary-source: derived
+      operationId: postApiPolicyDocuments*****
+      x-operation-id-source: derived
+  /api/policy/documents/*/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy documents * * *
+      x-summary-source: derived
+      operationId: postApiPolicyDocuments***
+      x-operation-id-source: derived
+  /api/policy/documents/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy documents * *
+      x-summary-source: derived
+      operationId: postApiPolicyDocuments**
+      x-operation-id-source: derived
+  /api/policy/documents/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy documents *
+      x-summary-source: derived
+      operationId: postApiPolicyDocuments*
+      x-operation-id-source: derived
+  /api/policy/tasks/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy tasks *
+      x-summary-source: derived
+      operationId: postApiPolicyTasks*
+      x-operation-id-source: derived
+  /api/underwriting/documents/search/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api underwriting documents search *
+      x-summary-source: derived
+      operationId: postApiUnderwritingDocumentsSearch*
+      x-operation-id-source: derived
+  /api/underwriting/documents/search/*/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api underwriting documents search * *
+      x-summary-source: derived
+      operationId: postApiUnderwritingDocumentsSearch**
+      x-operation-id-source: derived
+  /api/*/properties/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api * properties *
+      x-summary-source: derived
+      operationId: postApi*Properties*
+      x-operation-id-source: derived
+  /api/attach:
+    post:
+      tags:
+      - Post
+      operationId: /api/attach
+      responses:
+        '200':
+          description: OK
+      summary: /api/attach
+      x-summary-source: derived
+  /api/formFields:
+    post:
+      tags:
+      - Post
+      operationId: /api/formFields
+      responses:
+        '200':
+          description: OK
+      summary: /api/form fields
+      x-summary-source: derived
+  /api/generatePDF:
+    post:
+      tags:
+      - Post
+      operationId: /api/generatePDF
+      responses:
+        '200':
+          description: OK
+      summary: /api/generate PDF
+      x-summary-source: derived
+  /api/getCompleteFormsList:
+    post:
+      tags:
+      - Post
+      operationId: /api/getCompleteFormsList
+      responses:
+        '200':
+          description: OK
+      summary: /api/get complete forms list
+      x-summary-source: derived
+  /api/getSelectableFormsList:
+    post:
+      tags:
+      - Post
+      operationId: /api/getSelectableFormsList
+      responses:
+        '200':
+          description: OK
+      summary: /api/get selectable forms list
+      x-summary-source: derived
+  /api/getPrintOrders:
+    post:
+      tags:
+      - Post
+      operationId: /api/getPrintOrders
+      responses:
+        '200':
+          description: OK
+      summary: /api/get print orders
+      x-summary-source: derived
+  /api/getPrintOrdersOrderedByPrintTier:
+    post:
+      tags:
+      - Post
+      operationId: /api/getPrintOrdersOrderedByPrintTier
+      responses:
+        '200':
+          description: OK
+      summary: /api/get print orders ordered by print tier
+      x-summary-source: derived
+  /api/load:
+    post:
+      tags:
+      - Post
+      operationId: /api/load
+      responses:
+        '200':
+          description: OK
+      summary: /api/load
+      x-summary-source: derived
+  /api/sample:
+    post:
+      tags:
+      - Post
+      operationId: /api/sample
+      responses:
+        '200':
+          description: OK
+      summary: /api/sample
+      x-summary-source: derived
+  /api/save:
+    post:
+      tags:
+      - Post
+      operationId: /api/save
+      responses:
+        '200':
+          description: OK
+      summary: /api/save
+      x-summary-source: derived
+  /api/issue:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api issue
+      x-summary-source: derived
+      operationId: postApiIssue
+      x-operation-id-source: derived
+  /api/emision:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api emision
+      x-summary-source: derived
+      operationId: postApiEmision
+      x-operation-id-source: derived
+  /api/impresion:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api impresion
+      x-summary-source: derived
+      operationId: postApiImpresion
+      x-operation-id-source: derived
+  /api/policyControlDate:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy control date
+      x-summary-source: derived
+      operationId: postApiPolicyControlDate
+      x-operation-id-source: derived
+  /api/enroll:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api enroll
+      x-summary-source: derived
+      operationId: postApiEnroll
+      x-operation-id-source: derived
+  /api/re-enroll:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api re enroll
+      x-summary-source: derived
+      operationId: postApiReEnroll
+      x-operation-id-source: derived
+  /api/cancel:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api cancel
+      x-summary-source: derived
+      operationId: postApiCancel
+      x-operation-id-source: derived
+  /api/policyMod:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy mod
+      x-summary-source: derived
+      operationId: postApiPolicyMod
+      x-operation-id-source: derived
+  /api/enrollmentChange:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api enrollment change
+      x-summary-source: derived
+      operationId: postApiEnrollmentChange
+      x-operation-id-source: derived
+  /api/enrollmentCoverageChange:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api enrollment coverage change
+      x-summary-source: derived
+      operationId: postApiEnrollmentCoverageChange
+      x-operation-id-source: derived
+  /api/report/*:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api report *
+      x-summary-source: derived
+      operationId: postApiReport*
+      x-operation-id-source: derived
+  /api/chat/start:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api chat start
+      x-summary-source: derived
+      operationId: postApiChatStart
+      x-operation-id-source: derived
+  /api/chat/transcript:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api chat transcript
+      x-summary-source: derived
+      operationId: postApiChatTranscript
+      x-operation-id-source: derived
+  /api/enrollment:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api enrollment
+      x-summary-source: derived
+      operationId: postApiEnrollment
+      x-operation-id-source: derived
+  /api/cancelDates:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api cancel dates
+      x-summary-source: derived
+      operationId: postApiCancelDates
+      x-operation-id-source: derived
+  /api/quote:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api quote
+      x-summary-source: derived
+      operationId: postApiQuote
+      x-operation-id-source: derived
+  /api/policy:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api policy
+      x-summary-source: derived
+      operationId: postApiPolicy
+      x-operation-id-source: derived
+  /api/transactions:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api transactions
+      x-summary-source: derived
+      operationId: postApiTransactions
+      x-operation-id-source: derived
+  /api/certificate:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api certificate
+      x-summary-source: derived
+      operationId: postApiCertificate
+      x-operation-id-source: derived
+  /api/verifyMasterPolicy:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api verify master policy
+      x-summary-source: derived
+      operationId: postApiVerifyMasterPolicy
+      x-operation-id-source: derived
+  /api/requestMasterPolicy:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api request master policy
+      x-summary-source: derived
+      operationId: postApiRequestMasterPolicy
+      x-operation-id-source: derived
+  /api/classCodes:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api class codes
+      x-summary-source: derived
+      operationId: postApiClassCodes
+      x-operation-id-source: derived
+  /api/programCodes:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api program codes
+      x-summary-source: derived
+      operationId: postApiProgramCodes
+      x-operation-id-source: derived
+  /api/symbols:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api symbols
+      x-summary-source: derived
+      operationId: postApiSymbols
+      x-operation-id-source: derived
+  /api/categories:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api categories
+      x-summary-source: derived
+      operationId: postApiCategories
+      x-operation-id-source: derived
+  /api/submitCategories:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api submit categories
+      x-summary-source: derived
+      operationId: postApiSubmitCategories
+      x-operation-id-source: derived
+  /api/availability:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api availability
+      x-summary-source: derived
+      operationId: postApiAvailability
+      x-operation-id-source: derived
+  /api/classOfBusiness:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api class of business
+      x-summary-source: derived
+      operationId: postApiClassOfBusiness
+      x-operation-id-source: derived
+  /api/manuscriptId:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api manuscript id
+      x-summary-source: derived
+      operationId: postApiManuscriptId
+      x-operation-id-source: derived
+  /api/products:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api products
+      x-summary-source: derived
+      operationId: postApiProducts
+      x-operation-id-source: derived
+  /api/rate:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api rate
+      x-summary-source: derived
+      operationId: postApiRate
+      x-operation-id-source: derived
+  /api/quotes:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api quotes
+      x-summary-source: derived
+      operationId: postApiQuotes
+      x-operation-id-source: derived
+  /api/taxes:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api taxes
+      x-summary-source: derived
+      operationId: postApiTaxes
+      x-operation-id-source: derived
+  /api/docs/contextData:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api docs context data
+      x-summary-source: derived
+      operationId: postApiDocsContextData
+      x-operation-id-source: derived
+  /api/docs/questionSetCriteria:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api docs question set criteria
+      x-summary-source: derived
+      operationId: postApiDocsQuestionSetCriteria
+      x-operation-id-source: derived
+  /api/docs/lines:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api docs lines
+      x-summary-source: derived
+      operationId: postApiDocsLines
+      x-operation-id-source: derived
+  /api/contextData:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api context data
+      x-summary-source: derived
+      operationId: postApiContextData
+      x-operation-id-source: derived
+  /api/lines:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api lines
+      x-summary-source: derived
+      operationId: postApiLines
+      x-operation-id-source: derived
+  /api/createAnswerSession:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api create answer session
+      x-summary-source: derived
+      operationId: postApiCreateAnswerSession
+      x-operation-id-source: derived
+  /api/updateAnswerSession:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api update answer session
+      x-summary-source: derived
+      operationId: postApiUpdateAnswerSession
+      x-operation-id-source: derived
+  /api/getAnswerSession:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api get answer session
+      x-summary-source: derived
+      operationId: postApiGetAnswerSession
+      x-operation-id-source: derived
+  /api/setAnswerSession:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api set answer session
+      x-summary-source: derived
+      operationId: postApiSetAnswerSession
+      x-operation-id-source: derived
+  /api/questionSet:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api question set
+      x-summary-source: derived
+      operationId: postApiQuestionSet
+      x-operation-id-source: derived
+  /api/questionnaire:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api questionnaire
+      x-summary-source: derived
+      operationId: postApiQuestionnaire
+      x-operation-id-source: derived
+  /api/checkEligibility:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api check eligibility
+      x-summary-source: derived
+      operationId: postApiCheckEligibility
+      x-operation-id-source: derived
+  /api/newBusiness:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api new business
+      x-summary-source: derived
+      operationId: postApiNewBusiness
+      x-operation-id-source: derived
+  /api/newBusiness/appetite:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api new business appetite
+      x-summary-source: derived
+      operationId: postApiNewBusinessAppetite
+      x-operation-id-source: derived
+  /api/newBusiness/application:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api new business application
+      x-summary-source: derived
+      operationId: postApiNewBusinessApplication
+      x-operation-id-source: derived
+  /api/newBusiness/eligibility:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api new business eligibility
+      x-summary-source: derived
+      operationId: postApiNewBusinessEligibility
+      x-operation-id-source: derived
+  /api/newBusiness/pricing:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api new business pricing
+      x-summary-source: derived
+      operationId: postApiNewBusinessPricing
+      x-operation-id-source: derived
+  /api/newBusiness/documents:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api new business documents
+      x-summary-source: derived
+      operationId: postApiNewBusinessDocuments
+      x-operation-id-source: derived
+  /api/newBusiness/submit:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api new business submit
+      x-summary-source: derived
+      operationId: postApiNewBusinessSubmit
+      x-operation-id-source: derived
+  /api/pricingIndication:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api pricing indication
+      x-summary-source: derived
+      operationId: postApiPricingIndication
+      x-operation-id-source: derived
+  /api/pricingDetail:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api pricing detail
+      x-summary-source: derived
+      operationId: postApiPricingDetail
+      x-operation-id-source: derived
+  /api/create:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api create
+      x-summary-source: derived
+      operationId: postApiCreate
+      x-operation-id-source: derived
+  /api/create/renewal:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api create renewal
+      x-summary-source: derived
+      operationId: postApiCreateRenewal
+      x-operation-id-source: derived
+  /api/read:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api read
+      x-summary-source: derived
+      operationId: postApiRead
+      x-operation-id-source: derived
+  /api/update:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api update
+      x-summary-source: derived
+      operationId: postApiUpdate
+      x-operation-id-source: derived
+  /api/bind:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api bind
+      x-summary-source: derived
+      operationId: postApiBind
+      x-operation-id-source: derived
+  /api/assign:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api assign
+      x-summary-source: derived
+      operationId: postApiAssign
+      x-operation-id-source: derived
+  /api/search:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: Search submissions
+      summary: Create api search
+      x-summary-source: derived
+      operationId: postApiSearch
+      x-operation-id-source: derived
+  /api/setStatus:
+    post:
+      tags:
+      - Post
+      responses:
+        '200':
+          description: OK
+      summary: Create api set status
+      x-summary-source: derived
+      operationId: postApiSetStatus
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-billing-openapi.json
+- american-financial-group-claims-openapi.json
+- american-financial-group-document-openapi.json
+- american-financial-group-forms-openapi.json
+- american-financial-group-issuance-openapi.json
+- american-financial-group-letters-openapi.json
+- american-financial-group-notification-openapi.json
+- american-financial-group-policy-openapi.json
+- american-financial-group-product-openapi.json
+- american-financial-group-rating-openapi.json
+- american-financial-group-risk-selection-openapi.json
+- american-financial-group-shop-openapi.json
+- american-financial-group-submission-openapi.json

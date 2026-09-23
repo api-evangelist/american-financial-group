@@ -1,0 +1,33 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Producers API
+  version: 1.0.0
+  description: 'Operations tagged producers across 2 of this provider''s published API definitions: american-financial-group-billing-openapi.json, american-financial-group-producer-openapi.json. Each path carries the servers of the definition it was published in.'
+tags:
+- name: Producers
+paths:
+  /api/updateProducers:
+    post:
+      tags:
+      - Producers
+      responses:
+        '200':
+          description: OK
+      summary: Create api update producers
+      x-summary-source: derived
+      operationId: postApiUpdateProducers
+      x-operation-id-source: derived
+  /api/producers:
+    post:
+      tags:
+      - Producers
+      responses:
+        '200':
+          description: OK
+      summary: Create api producers
+      x-summary-source: derived
+      operationId: postApiProducers
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-billing-openapi.json
+- american-financial-group-producer-openapi.json

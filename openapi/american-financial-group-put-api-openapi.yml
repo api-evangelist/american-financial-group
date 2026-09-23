@@ -1,0 +1,55 @@
+openapi: 3.2.0
+info:
+  title: American Financial Group Put API
+  version: 1.0.0
+  description: 'Operations tagged put across 2 of this provider''s published API definitions: american-financial-group-claims-openapi.json, american-financial-group-document-openapi.json. Each path carries the servers of the definition it was published in.'
+tags:
+- name: PUT
+paths:
+  /api/fnol/submit:
+    put:
+      tags:
+      - PUT
+      responses:
+        '200':
+          description: OK
+      summary: Replace api fnol submit
+      x-summary-source: derived
+      operationId: putApiFnolSubmit
+      x-operation-id-source: derived
+  /api/*/documents/*:
+    put:
+      tags:
+      - PUT
+      responses:
+        '200':
+          description: OK
+      summary: Replace api * documents *
+      x-summary-source: derived
+      operationId: putApi*Documents*
+      x-operation-id-source: derived
+  /api/*/documents:
+    put:
+      tags:
+      - PUT
+      responses:
+        '200':
+          description: OK
+      summary: Replace api * documents
+      x-summary-source: derived
+      operationId: putApi*Documents
+      x-operation-id-source: derived
+  /api/documents/*/*:
+    put:
+      tags:
+      - PUT
+      responses:
+        '200':
+          description: OK
+      summary: Replace api documents * *
+      x-summary-source: derived
+      operationId: putApiDocuments**
+      x-operation-id-source: derived
+x-refined-from:
+- american-financial-group-claims-openapi.json
+- american-financial-group-document-openapi.json

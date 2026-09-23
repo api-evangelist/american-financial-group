@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Motor Carrier…
+  version: 1.0.0
+tags:
+- name: motorCarrierReport
+paths:
+  /api/motorCarrierReport:
+    post:
+      tags:
+      - motorCarrierReport
+      responses:
+        '200':
+          description: OK
+      summary: Create api motor carrier report
+      x-summary-source: derived
+      operationId: postApiMotorCarrierReport
+      x-operation-id-source: derived

@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Flash Flood…
+  version: 1.0.0
+tags:
+- name: flashFloodScore
+paths:
+  /api/flashFloodScore:
+    post:
+      tags:
+      - flashFloodScore
+      responses:
+        '200':
+          description: OK
+      summary: Create api flash flood score
+      x-summary-source: derived
+      operationId: postApiFlashFloodScore
+      x-operation-id-source: derived

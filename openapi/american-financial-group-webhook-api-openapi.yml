@@ -1,0 +1,25 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Ingestion Webhook API
+  version: 0.187.0
+tags:
+- name: Webhook
+paths:
+  /api/webhook/{webhook}:
+    post:
+      parameters:
+      - name: webhook
+        in: path
+        required: true
+        description: The name of the webhook configuration
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Webhook
+      summary: Create api webhook by webhook
+      x-summary-source: derived
+      operationId: postApiWebhookByWebhook
+      x-operation-id-source: derived

@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Risk Assessment Crime Score API
+  version: 1.0.0
+tags:
+- name: crimeScore
+paths:
+  /api/crimeScore:
+    post:
+      tags:
+      - crimeScore
+      responses:
+        '200':
+          description: OK
+      summary: Create api crime score
+      x-summary-source: derived
+      operationId: postApiCrimeScore
+      x-operation-id-source: derived

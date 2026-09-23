@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Contract Billing API
+  version: 1.0.0
+tags:
+- name: Billing
+paths:
+  /api/billing:
+    post:
+      tags:
+      - Billing
+      responses:
+        '200':
+          description: OK
+      summary: Create api billing
+      x-summary-source: derived
+      operationId: postApiBilling
+      x-operation-id-source: derived

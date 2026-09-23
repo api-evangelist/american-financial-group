@@ -1,0 +1,18 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Producer Business Unit API
+  version: 1.0.0
+tags:
+- name: Business Unit
+paths:
+  /api/businessUnit:
+    post:
+      tags:
+      - Business Unit
+      responses:
+        '200':
+          description: OK
+      summary: Create api business unit
+      x-summary-source: derived
+      operationId: postApiBusinessUnit
+      x-operation-id-source: derived
