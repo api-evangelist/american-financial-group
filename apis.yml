@@ -17,7 +17,7 @@ tags:
 - Property Casualty
 - Specialty Insurance
 - Annuities
-- Financial-Services
+- Financial Services
 - Commercial Insurance
 - Fortune 500
 tags_raw:
@@ -28,6 +28,7 @@ tags_raw:
 - Financial Services
 - Commercial Insurance
 - Fortune 500
+- Financial-Services
 type: Index
 deliveryModel:
   model: unknown
@@ -7667,8 +7668,6 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
-  - agency-codes
-  tags_raw:
   - agency codes
   properties:
   - type: OpenAPI
@@ -8018,8 +8017,6 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
-  - Media Types
-  tags_raw:
   - Media types
   properties:
   - type: OpenAPI
@@ -8282,8 +8279,6 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
-  - Property Valuation
-  tags_raw:
   - Property - Valuation
   properties:
   - type: OpenAPI
