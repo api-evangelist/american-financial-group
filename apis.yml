@@ -7668,8 +7668,6 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
-  - agency-codes
-  tags_raw:
   - agency codes
   properties:
   - type: OpenAPI
@@ -8019,8 +8017,6 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
-  - Media Types
-  tags_raw:
   - Media types
   properties:
   - type: OpenAPI
@@ -8283,8 +8279,6 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
-  - Property Valuation
-  tags_raw:
   - Property - Valuation
   properties:
   - type: OpenAPI
