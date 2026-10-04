@@ -7668,6 +7668,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - agency-codes
+  tags_raw:
   - agency codes
   properties:
   - type: OpenAPI
@@ -8017,6 +8019,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Media Types
+  tags_raw:
   - Media types
   properties:
   - type: OpenAPI
@@ -8279,6 +8283,8 @@ apis:
   humanURL: https://api-documentation.gaig.com/shop/index.html
   baseURL: https://prod01.api.gaig.com/shop
   tags:
+  - Property Valuation
+  tags_raw:
   - Property - Valuation
   properties:
   - type: OpenAPI
@@ -8449,6 +8455,9 @@ apis:
   - type: APIReference
     url: https://api-documentation.gaig.com/claims/index.html
 common:
+- type: CapabilityMap
+  url: capabilities/american-financial-group-capability-edges.yml
+  name: American Financial Group Business Capability Map
 - type: Overlay
   url: overlays/american-financial-group-shop-overlay.yaml
 - type: Overlay
