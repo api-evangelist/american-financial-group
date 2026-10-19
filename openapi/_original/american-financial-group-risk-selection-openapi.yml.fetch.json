@@ -1,0 +1,12 @@
+{
+ "url": "https://api-documentation.gaig.com/risk-selection/openapi.json",
+ "requested_url": "https://api-documentation.gaig.com/risk-selection/openapi.json",
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 2866,
+ "sha256": "a1685bd9bbc4e0158f6f72a386c72cf4abe6784ace28617b955d03a48de11778",
+ "fetched_at": "2026-10-19",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "equivalent",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the provider's current document describes the same operations (Jaccard 1.0), but the bytes differ, so the archive is an earlier or reformatted copy."
+}

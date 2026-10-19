@@ -1,0 +1,12 @@
+{
+ "url": "https://api-documentation.gaig.com/shop/openapi.json",
+ "requested_url": "https://api-documentation.gaig.com/shop/openapi.json",
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 2525,
+ "sha256": "8011c47e9634998603532ad53a9cae47de35602c0671a498e12ac0a3121e4389",
+ "fetched_at": "2026-10-19",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "byte-identical",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the archived file is byte-identical to what the provider serves."
+}

@@ -1,0 +1,12 @@
+{
+ "url": "https://api-documentation.gaig.com/submission/openapi.json",
+ "requested_url": "https://api-documentation.gaig.com/submission/openapi.json",
+ "status": 200,
+ "content_type": "application/json",
+ "bytes": 2634,
+ "sha256": "48e07c102d5ac71aa0ea3fde08fe31010cec4487d076e9170ac4bcad90f1b330",
+ "fetched_at": "2026-10-19",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "equivalent",
+ "note": "Re-fetched from the provider by verify-openapi-sources.py; the provider's current document describes the same operations (Jaccard 0.929), but the bytes differ, so the archive is an earlier or reformatted copy."
+}
