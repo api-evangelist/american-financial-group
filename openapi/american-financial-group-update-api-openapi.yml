@@ -1,0 +1,24 @@
+openapi: 3.2.0
+info:
+  title: Great American Insurance - Opportunity Update API
+  version: 1.0.0
+tags:
+- name: Update
+paths:
+  /api/update:
+    post:
+      tags:
+      - Update
+      responses:
+        '200':
+          description: OK
+      summary: Create api update
+      x-summary-source: derived
+      operationId: postApiUpdate
+      x-operation-id-source: derived
+x-provenance:
+  method: harvested
+  publisher: American Financial Group
+  source: https://api-documentation.gaig.com/submission/openapi.json
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
