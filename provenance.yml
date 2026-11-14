@@ -11,14 +11,26 @@ artifacts:
   capabilities/american-financial-group-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
   conformance/american-financial-group-conformance.yml:
     method: searched
     evidence: declared in the artifact
   conventions/american-financial-group-conventions.yml:
     method: searched
     evidence: declared in the artifact
+  data-license/american-financial-group-data-license.yml:
+    method: harvested
+    evidence: declared in the artifact
   data-model/american-financial-group-data-model.yml:
     method: derived
+    evidence: declared in the artifact
+  eligibility/american-financial-group-eligibility.yml:
+    method: harvested
     evidence: declared in the artifact
   errors/american-financial-group-problem-types.yml:
     method: searched
@@ -41,7 +53,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -108,6 +120,9 @@ artifacts:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-11-02T082323.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   lifecycle/american-financial-group-lifecycle.yml:
@@ -670,6 +685,9 @@ artifacts:
     evidence: declared in the artifact
   skills/american-financial-group-report-a-claim.md:
     method: generated
+    evidence: declared in the artifact
+  terms/american-financial-group-terms-of-service.yml:
+    method: harvested
     evidence: declared in the artifact
   well-known/american-financial-group-security.txt:
     method: unknown
